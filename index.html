@@ -124,10 +124,30 @@
       <p><b>Давайте дружить, это выгодно!</b></p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
-    <section class="modal modal-login">
+    <section class="modal modal-letter">
       <h2 class="visually-hidden">Связаться с нами</h2>
       <b>Напишите нам</b>
-      <!-- Здесь будет форма -->
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>
+            <b>Ваше имя</b>
+            <input type="text" name="full-name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label>
+            <b>Ваш e-mail:</b>
+            <input type="email" name="email" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>
+            <b>Текст письма:</b>
+            <input type="text" name="letter" placeholder="В свободной форме">
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
       <span class="modal-close" aria-label="Закрыть окно формы"></span>
     </section>
   </body>
