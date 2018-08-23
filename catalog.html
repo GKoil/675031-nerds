@@ -26,7 +26,7 @@
 
       <section class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru"> <!--Форма фильтр-->
           <fieldset>
             <legend>Стоимость:</legend>
 
@@ -34,21 +34,62 @@
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
-              <li>Адаптивная</li>
-              <li>Фиксированная</li>
-              <li>Резиновая</li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" value="adaptive" checked>
+                  Адаптивная
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" value="fixed">
+                  Фиксированная
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" value="rubber">
+                  Резиновая
+                </label>
+              </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
             <ul>
-              <li>Слайдер</li>
-              <li>Блок преимуществ</li>
-              <li>Новости</li>
-              <li>Галерея</li>
-              <li>Корзина</li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="slider" checked>
+                  Слайдер
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="advantages">
+                  Блок преимуществ
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="news" checked>
+                  Новости
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="gallery">
+                  Галерея
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="basket">
+                  Корзина
+                </label>
+              </li>
             </ul>
           </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
         </form>
       </section>
       <section class="catalog">
