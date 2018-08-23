@@ -29,7 +29,19 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru"> <!--Форма фильтр-->
           <fieldset>
             <legend>Стоимость:</legend>
-
+            <label>
+              <input type="range" name="radio" min="0" max="20000" value="15000">
+            </label>
+            <p>
+              <label>
+                От
+                <input type="text" name="min price" value="0">
+              </label>
+              <label>
+                До
+                <input type="text" name="max price" value="15000">
+              </label>
+            </p>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
@@ -101,7 +113,7 @@
           <li><a class="button" href="#">По названию</a></li>
         </ul>
 
-        <ul class="catalog-list">
+        <ul class="catalog-list">   <!--Каталог-->
           <li class="catalog-item">
             <a href="#">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон «Sedona»">
@@ -171,13 +183,12 @@
         </ul>
       </section>
       <section class="maps">
-        <p class="main-contacts">
-          <b>Nёrds design studio</b><br>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
-          тел. +7 (812) 275-75-75
-        </p>
-        <a class="button" href="contacts-popap.html">Напишите нам</a>
+        <section class="maps-address">
+          <p><b>Nёrds design studio</b></p>
+          <p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="button" href="contacts-popap.html">Напишите нам</a>
+        </section>
         <img src="img/map-marker.png" width="1440" height="416" alt="Карта нашего местонахождения">
       </section>
     </main>
