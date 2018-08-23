@@ -26,7 +26,30 @@
 
       <section class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <!--Здесь будет форма-->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>Адаптивная</li>
+              <li>Фиксированная</li>
+              <li>Резиновая</li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>Слайдер</li>
+              <li>Блок преимуществ</li>
+              <li>Новости</li>
+              <li>Галерея</li>
+              <li>Корзина</li>
+            </ul>
+          </fieldset>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список шаблонов</h2>
@@ -126,11 +149,31 @@
       <p><b>Давайте дружить, это выгодно!</b></p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
-    <section class="modal modal-login">
+    <section class="modal modal-letter">
       <h2 class="visually-hidden">Связаться с нами</h2>
       <b>Напишите нам</b>
-      <!-- Здесь будет форма -->
-      <span class="modal-close" aria-label="Закрыть окно формы">x</span>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>
+            <b>Ваше имя</b>
+            <input type="text" name="full-name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label>
+            <b>Ваш e-mail:</b>
+            <input type="email" name="email" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>
+            <b>Текст письма:</b>
+            <input type="text" name="letter" placeholder="В свободной форме">
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть окно формы"></button>
     </section>
   </body>
 </html>
