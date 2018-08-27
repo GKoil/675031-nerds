@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>Студия Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -45,20 +48,20 @@
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
-            <ul>
-              <li class="filter-option">
+            <ul class="grid-option">
+              <li class="filter-option-grid">
                 <label>
                   <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" value="adaptive" checked>
                   Адаптивная
                 </label>
               </li>
-              <li class="filter-option">
+              <li class="filter-option-grid">
                 <label>
                   <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" value="fixed">
                   Фиксированная
                 </label>
               </li>
-              <li class="filter-option">
+              <li class="filter-option-grid">
                 <label>
                   <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" value="rubber">
                   Резиновая
@@ -68,32 +71,32 @@
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
-            <ul>
-              <li class="filter-option">
+            <ul class="specific-option">
+              <li class="filter-option-specific">
                 <label>
                   <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="slider" checked>
                   Слайдер
                 </label>
               </li>
-              <li class="filter-option">
+              <li class="filter-option-specific">
                 <label>
                   <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="advantages">
                   Блок преимуществ
                 </label>
               </li>
-              <li class="filter-option">
+              <li class="filter-option-specific">
                 <label>
                   <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="news" checked>
                   Новости
                 </label>
               </li>
-              <li class="filter-option">
+              <li class="filter-option-specific">
                 <label>
                   <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="gallery">
                   Галерея
                 </label>
               </li>
-              <li class="filter-option">
+              <li class="filter-option-specific">
                 <label>
                   <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="basket">
                   Корзина
@@ -118,61 +121,73 @@
             <a href="#">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон «Sedona»">
             </a>
-            <h3>Sedona</h3>
-            <p>
-              Информационный сайт для туристов
-              <a class="button" href="#">9900 Руб.</a>
-            </p>
+            <div>
+              <h3>Sedona</h3>
+              <p>
+                Информационный сайт для туристов
+                <a class="button" href="#">9900 Руб.</a>
+              </p>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
-              <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон «Pink»">
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон «Pink App»">
             </a>
-            <h3>Pink</h3>
-            <p>
-              Продуктовый лендинг приложения для iOS и Android
-              <a class="button" href="#">9900 Руб.</a>
-            </p>
+            <div>
+              <h3>Pink App</h3>
+              <p>
+                Продуктовый лендинг приложения для iOS и Android
+                <a class="button" href="#">9900 Руб.</a>
+              </p>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон «Barbershop»">
             </a>
-            <h3>Barbershop</h3>
-            <p>
-              Сайт салона красоты. Для мужчин, да.
-              <a class="button" href="#">9900 Руб.</a>
-            </p>
+            <div>
+              <h3>Barbershop</h3>
+              <p>
+                Сайт салона красоты. Для мужчин, да.
+                <a class="button" href="#">9900 Руб.</a>
+              </p>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон «MISHKA»">
             </a>
-            <h3>MISHKA</h3>
-            <p>
-              Интернет-магазин вязаных игрушек
-              <a class="button" href="#">9900 Руб.</a>
-            </p>
+            <div>
+              <h3>MISHKA</h3>
+              <p>
+                Интернет-магазин вязаных игрушек
+                <a class="button" href="#">9900 Руб.</a>
+              </p>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон «A Plus»">
             </a>
-            <h3>A Plus</h3>
-            <p>
-              Лендинг курсов повышения квалификации
-              <a class="button" href="#">9900 Руб.</a>
-            </p>
+            <div>
+              <h3>A Plus</h3>
+              <p>
+                Лендинг курсов повышения квалификации
+                <a class="button" href="#">9900 Руб.</a>
+              </p>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон «КВАСТ»">
             </a>
-            <h3>КВАСТ</h3>
-            <p>
-              Промо-сайт производителя крафтового кваса
-              <a class="button" href="#">9900 Руб.</a>
-            </p>
+            <div>
+              <h3>Кваст</h3>
+              <p>
+                Промо-сайт производителя крафтового кваса
+                <a class="button" href="#">9900 Руб.</a>
+              </p>
+            </div>
           </li>
         </ul>
         <ul class="pagination-list">  <!--Страницы сайта-->

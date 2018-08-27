@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Студия Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -23,24 +26,43 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Веб студия «Nerds»</h1>
-      <section class="slider-1">  <!--Слайдер-->
-        <p><b>Долго, дорого, скурпулезно</b></p>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a href="#">Узнать больше</a>
-        <img src="img/slide1.png" width="698" height="413" alt="Слайдер 1">
+      <section class="slider">
+        <div class="slider-1">  <!--Слайдер-->
+          <p><b>Долго, дорого, скурпулезно</b></p>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="#">Узнать больше</a>
+          <img src="img/slide1.png" width="698" height="413" alt="Слайдер 1">
+        </div>
+        <div class="slider-2">
+          <p><b>Любим математику как никто другой</b></p>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a href="#">Узнать больше</a>
+          <img src="img/slide2.png" width="663" height="430" alt="Слайдер 2">
+        </div>
+        <div class="slider-3">
+          <p><b>Только ночь, только хардкор</b></p>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="#">Узнать больше</a>
+          <img src="img/slide3.png" width="759" height="411" alt="Слайдер 3">
+        </div>
+
+
+        <ul> <!--Переключатель слайдов-->
+          <li class="slider-radio">
+            <button type="button" class="slider-btn" aria-label="Первый слайд">
+            </button>
+          </li>
+          <li class="slider-radio">
+            <button type="button" class="slider-btn" aria-label="Второй слайд">
+            </button>
+          </li>
+          <li class="slider-radio">
+            <button type="button" class="slider-btn" aria-label="Третий слайд">
+            </button>
+          </li>
+        </ul>
       </section>
-      <section class="slider-2">
-        <p><b>Любим математику как никто другой</b></p>
-        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-        <a href="#">Узнать больше</a>
-        <img src="img/slide2.png" width="663" height="430" alt="Слайдер 2">
-      </section>
-      <section class="slider-3">
-        <p><b>Только ночь, только хардкор</b></p>
-        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <a href="#">Узнать больше</a>
-        <img src="img/slide3.png" width="759" height="411" alt="Слайдер 3">
-      </section>
+
       <section class="features">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="features-list">
@@ -89,7 +111,7 @@
         </ul>
       </section>
       <section class="partners">
-        <ul>
+        <ul class="our-partners">
           <li>
             <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png%20copy.png" width="199" height="68" alt="Партнёр «Htmlacademy»"></a>
           </li>
@@ -108,7 +130,7 @@
         <section class="maps-address">
           <p><b>Nёrds design studio</b></p>
           <p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
+          <p><a class="telephone" href="tel:+7 (812) 275-75-75"> тел. +7 (812) 275-75-75</a></p>
           <a class="button" href="contacts-popap.html">Напишите нам</a>
         </section>
         <img src="img/map-marker.png" width="1440" height="416" alt="Карта нашего местонахождения">
@@ -143,7 +165,7 @@
         <p>
           <label>
             <b>Текст письма:</b>
-            <input type="text" name="letter" placeholder="В свободной форме">
+            <textarea type=="text" name="letter" placeholder="В свободной форме"></textarea>
           </label>
         </p>
         <button class="button" type="submit">Отправить</button>
