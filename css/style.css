@@ -237,6 +237,16 @@ a {
   color: rgb(40, 49, 54);
 }
 
+.filter-option-grid:hover,
+.filter-option-specific:hover {
+  color: rgb(0, 0, 0);
+}
+
+.filter-option-grid:disabled,
+.filter-option-specific:disabled {
+  color: rgba(40, 49, 54, 0.3);
+}
+
 .filter-button {
   font-family: "Roboto-medium", Arial, sans-serif;
   background-color: rgb(238, 238, 238);
@@ -260,6 +270,72 @@ a {
 }
 
 .additional-filter {
-  font-family: "Roboto-Regular", Arial, sans-serif;
-
+  list-style: none;
 }
+
+.sort {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort:focus,
+.sort:active {
+  color: rgb(0, 0, 0);
+}
+
+.visual-button {
+  list-style: none;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list-info {
+  background-color: rgb(238, 238, 238);
+}
+
+.name-product {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.product-description {
+  color: rgb(102, 102, 102);
+  line-height: 18px;
+}
+
+.button-price:focus {
+  color: rgb(255, 255, 255);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  background-color: rgb(238, 238, 238);
+  color: rgb(0, 0, 0);
+}
+
+.pagination-item:hover {
+  background-color: rgb(223, 223, 223);
+}
+
+.pagination-item:focus {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(213, 213, 213);
+}
+
+.pagination-item-current {
+  border: 3px solid rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
+}
+
