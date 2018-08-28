@@ -26,26 +26,25 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Веб студия «Nerds»</h1>
-      <section class="slider">
-        <div class="slider-1">  <!--Слайдер-->
-          <p><b>Долго, дорого, скурпулезно</b></p>
+      <div class="slider">
+        <section class="slider-1">  <!--Слайдер-->
+          <p><b>Долго, дорого, скурпулезно.</b></p>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#">Узнать больше</a>
+          <a class="button" href="#">Узнать больше</a>
           <img src="img/slide1.png" width="698" height="413" alt="Слайдер 1">
-        </div>
-        <div class="slider-2">
+        </section>
+        <section class="slider-2">
           <p><b>Любим математику как никто другой</b></p>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a href="#">Узнать больше</a>
+          <a class="button" href="#">Узнать больше</a>
           <img src="img/slide2.png" width="663" height="430" alt="Слайдер 2">
-        </div>
-        <div class="slider-3">
+        </section>
+        <section class="slider-3">
           <p><b>Только ночь, только хардкор</b></p>
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="#">Узнать больше</a>
+          <a class="button" href="#">Узнать больше</a>
           <img src="img/slide3.png" width="759" height="411" alt="Слайдер 3">
-        </div>
-
+        </section>
 
         <ul> <!--Переключатель слайдов-->
           <li class="slider-radio">
@@ -61,7 +60,7 @@
             </button>
           </li>
         </ul>
-      </section>
+      </div>
 
       <section class="features">
         <h2 class="visually-hidden">Услуги</h2>
@@ -74,12 +73,12 @@
           <li class="feature-item">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button" href="#">Заказать</a>
+            <a class="button green" href="#">Заказать</a>
           </li>
           <li class="feature-item">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button" href="#">Заказать</a>
+            <a class="button yellow" href="#">Заказать</a>
           </li>
         </ul>
       </section>
@@ -94,18 +93,18 @@
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
         <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип компании «Nerds»">
-        <p>с 2004 года Любим точность во всем:</p>
+        <p class="about-figure">с 2004 года Любим точность во всем:</p>
         <ul class="our-advantages">
-          <li>
-            <b>146%</b>
+          <li class="our-advantages-list">
+            <b>146<span class="our-advantages-list-percent">%</span></b>
             <p>Уровень сомоотдачи</p>
           </li>
-          <li>
-            <b>100%</b>
+          <li class="our-advantages-list">
+            <b>100<span class="our-advantages-list-percent">%</span></b>
             <p>Соблюдение сроков</p>
           </li>
-          <li>
-            <b>50%</b>
+          <li class="our-advantages-list">
+            <b>50<span class="our-advantages-list-percent">%</span></b>
             <p>Минимальная предоплата</p>
           </li>
         </ul>
@@ -150,19 +149,19 @@
       <h2 class="visually-hidden">Связаться с нами</h2>
       <b>Напишите нам</b>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
+        <p class="appointment-item">
           <label>
             <b>Ваше имя</b>
             <input type="text" name="full-name" placeholder="Имя Фамилия">
           </label>
         </p>
-        <p>
+        <p class="appointment-item">
           <label>
             <b>Ваш e-mail:</b>
             <input type="email" name="email" placeholder="email@example.com">
           </label>
         </p>
-        <p>
+        <p class="appointment-item">
           <label>
             <b>Текст письма:</b>
             <textarea type=="text" name="letter" placeholder="В свободной форме"></textarea>

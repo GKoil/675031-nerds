@@ -16,7 +16,7 @@
         <ul class="site-navigation">
           <li><a href="atelier.html">Студия</a></li>
           <li><a href="client.html">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a href="#" class="on">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-basket">
@@ -25,7 +25,7 @@
       </nav>
     </header>
     <main class="container">
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
 
       <section class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
@@ -36,11 +36,11 @@
               <input type="range" name="radio" min="0" max="20000" value="15000">
             </label>
             <p>
-              <label>
+              <label class="cost">
                 От
                 <input type="text" name="min price" value="0">
               </label>
-              <label>
+              <label class="cost">
                 До
                 <input type="text" name="max price" value="15000">
               </label>
@@ -201,11 +201,12 @@
         <section class="maps-address">
           <p><b>Nёrds design studio</b></p>
           <p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
+          <p><a class="telephone" href="tel:+7 (812) 275-75-75"> тел. +7 (812) 275-75-75</a></p>
           <a class="button" href="contacts-popap.html">Напишите нам</a>
         </section>
         <img src="img/map-marker.png" width="1440" height="416" alt="Карта нашего местонахождения">
       </section>
+
     </main>
     <footer class="main-footer">
       <ul class="footer-social">  <!--Кнопки на соц. сети-->
@@ -220,22 +221,22 @@
       <h2 class="visually-hidden">Связаться с нами</h2>
       <b>Напишите нам</b>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
+        <p class="appointment-item">
           <label>
             <b>Ваше имя</b>
             <input type="text" name="full-name" placeholder="Имя Фамилия">
           </label>
         </p>
-        <p>
+        <p class="appointment-item">
           <label>
             <b>Ваш e-mail:</b>
             <input type="email" name="email" placeholder="email@example.com">
           </label>
         </p>
-        <p>
+        <p class="appointment-item">
           <label>
             <b>Текст письма:</b>
-            <input type="text" name="letter" placeholder="В свободной форме">
+            <textarea type=="text" name="letter" placeholder="В свободной форме"></textarea>
           </label>
         </p>
         <button class="button" type="submit">Отправить</button>

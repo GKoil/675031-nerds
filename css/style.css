@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:focus {
+  color: rgba(255,255,255,0.3);
+  background-color: #d7373b;
+}
+
+.button.green {
+   background-color: #00ca74;
+ }
+
+.button.green:hover {
+  background-color: #00bc6c;
+}
+
+.button.green:focus {
+  background-color: #00aa62;
+}
+
+.button.yellow {
+  background-color: #efc84a;
+}
+
+.button.yellow:hover {
+  background-color: #eab534;
+}
+
+.button.yellow:focus {
+  background-color: #e5a722;
+}
+
+.about > p:first-of-type {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about p:nth-of-type(2) {
+  font-family: "Roboto-medium", Arial, sans-serif;
+}
+
+.about .about-figure {
+  text-transform: uppercase;
+}
+
+.our-advantages {
+  list-style: none;
+}
+
+.our-advantages-list b {
+  font-size: 45px;
+  line-height: 10.06px;
+}
+
+.our-advantages-list-percent {
+  font-size: 22px;
+  vertical-align: 18px;
+}
+
+.our-advantages-list p {
+  line-height: 18px;
+}
+
+.maps-address p:first-child {
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.maps-address p:nth-child(2) {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  line-height: 18px;
+  color: #666666;
+}
+
+.maps-address .telephone {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  line-height: 18px;
+  color: #666666;
+}
+
+.main-footer p:first-of-type {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-footer p:last-of-type {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  color: #444444;
+  line-height: 22px;
+}
+
+.main-header {
+  background-color: #eeeeee;
+  font-family: "Roboto-medium", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.slider {
+  line-height: 30px;
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-basket {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-basket a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.user-basket a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.user-basket a:focus {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.slider b {
+  font-family: "Roboto-medium", Arial, sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider-radio {
+  list-style: none;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-family: "Roboto-bold", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.feature-item p {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+}
+
+.appointment-item input,
+.appointment-item textarea {
+  font: inherit;
+  border: 2px solid #d7dcde;
+}
+
+.appointment-item input:hover,
+.appointment-item textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.appointment-item input:focus,
+.appointment-item textarea:focus {
+  border: 2px solid #000000;
+}
+
+.appointment-item input:invalid,
+.appointment-item textarea:invalid {
+  border: 2px solid #e74246;
+  color: #e74246;
+}
+
+/*Каталог*/
+
+.page-title {
+  font-family: "Roboto-medium", Arial, sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+  background-color: #eeeeee;
+}
+
+.filter legend {
+  font-family: "Roboto-bold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+}
+
+.cost {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  color: #283136;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.cost input {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  color: #283136;
+  line-height: 22px;
+  text-transform: uppercase;
+  background-color: rgb(238, 238, 238);
+  border: none;
+}
+
+.filter-option-grid,
+.filter-option-specific {
+  list-style: none;
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  line-height: 20px;
+  color: rgb(40, 49, 54);
+}
+
+.filter-button {
+  font-family: "Roboto-medium", Arial, sans-serif;
+  background-color: rgb(238, 238, 238);
+  color: rgb(0, 0, 0);
+  line-height: 18px;
+}
+
+.filter-button:hover {
+  background-color: rgb(223, 223, 223);
+}
+
+.filter-button:focus {
+  background-color: rgb(213, 213, 213);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog p {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.additional-filter {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+
+}
