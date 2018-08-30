@@ -1,4 +1,5 @@
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -13,6 +14,18 @@ a {
   text-decoration: none;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
 .button {
   font: inherit;
 
@@ -25,11 +38,12 @@ a {
   border: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #e74246;
 }
 
-.button:focus {
+.button:active {
   color: rgba(255,255,255,0.3);
   background-color: #d7373b;
 }
@@ -38,11 +52,12 @@ a {
    background-color: #00ca74;
  }
 
-.button.green:hover {
+.button.green:hover,
+.button.green:focus {
   background-color: #00bc6c;
 }
 
-.button.green:focus {
+.button.green:active {
   background-color: #00aa62;
 }
 
@@ -50,21 +65,23 @@ a {
   background-color: #efc84a;
 }
 
-.button.yellow:hover {
+.button.yellow:hover,
+.button.yellow:focus {
   background-color: #eab534;
 }
 
-.button.yellow:focus {
+.button.yellow:active {
   background-color: #e5a722;
 }
 
 .about > p:first-of-type {
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
 }
 
-.about p:nth-of-type(2) {
-  font-family: "Roboto-medium", Arial, sans-serif;
+.about p:nth-of-type(3) {
+  text-transform: uppercase;
 }
 
 .about .about-figure {
@@ -75,9 +92,10 @@ a {
   list-style: none;
 }
 
-.our-advantages-list b {
+.our-advantages-list p:first-child {
   font-size: 45px;
   line-height: 10.06px;
+  font-weight: 700;
 }
 
 .our-advantages-list-percent {
@@ -85,23 +103,27 @@ a {
   vertical-align: 18px;
 }
 
-.our-advantages-list p {
+.our-advantages-list p:last-child {
+  font-weight: 400;
+  color: rgb(40, 49, 54);
   line-height: 18px;
 }
 
 .maps-address p:first-child {
   text-transform: uppercase;
   line-height: 30px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
-.maps-address p:nth-child(2) {
-  font-family: "Roboto-Regular", Arial, sans-serif;
+.maps-address p:nth-child(2),
+.maps-address p:nth-child(3) {
   line-height: 18px;
+  font-weight: 400;
   color: #666666;
 }
 
 .maps-address .telephone {
-  font-family: "Roboto-Regular", Arial, sans-serif;
   line-height: 18px;
   color: #666666;
 }
@@ -109,28 +131,36 @@ a {
 .main-footer p:first-of-type {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 700;
 }
 
-.main-footer p:last-of-type {
-  font-family: "Roboto-Regular", Arial, sans-serif;
+.main-footer p:first-of-type {
   color: #444444;
   line-height: 22px;
+  font-weight: 400;
+}
+
+.modal-letter > p:first-of-type {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.appointment-item-text p {
+  font-weight: 700;
+  line-height: 18px;
 }
 
 .main-header {
   background-color: #eeeeee;
-  font-family: "Roboto-medium", Arial, sans-serif;
   text-transform: uppercase;
-}
-
-.slider {
-  line-height: 30px;
-  background-color: #eeeeee;
 }
 
 .site-navigation,
 .user-basket {
   list-style: none;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 .site-navigation a,
@@ -149,10 +179,24 @@ a {
   opacity: 0.3;
 }
 
+.slider {
+  background-color: #eeeeee;
+}
+
 .slider b {
-  font-family: "Roboto-medium", Arial, sans-serif;
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
+}
+
+.text-property {
+  color: rgb(40, 49, 54);
+  font-weight: 400;
+}
+
+.slider-button {
+  font-weight: 500;
+  line-height: 18px;
 }
 
 .slider-radio {
@@ -163,30 +207,48 @@ a {
   list-style: none;
 }
 
+.feature-item:nth-child(1) {
+  background-image: url("../img/illustration-1.png");
+  background-repeat: no-repeat;
+}
+
+.feature-item:nth-child(2) {
+  background-image: url("../img/illustration-2.png");
+  background-repeat: no-repeat;
+}
+
+.feature-item:nth-child(3) {
+  background-image: url("../img/illustration-3.png");
+  background-repeat: no-repeat;
+}
+
 .feature-item h3 {
-  font-family: "Roboto-bold", Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.feature-item p {
-  font-family: "Roboto-Regular", Arial, sans-serif;
+.appointment-item label {
+  font-weight: 700;
+  line-height: 18px;
 }
 
 .appointment-item input,
 .appointment-item textarea {
-  font: inherit;
+  font-weight: 400;
+  line-height: 18px;
   border: 2px solid #d7dcde;
 }
 
 .appointment-item input:hover,
-.appointment-item textarea:hover {
+.appointment-item textarea:hover,
+.appointment-item input:focus,
+.appointment-item textarea:focus {
   border: 2px solid #b4b9bb;
 }
 
-.appointment-item input:focus,
-.appointment-item textarea:focus {
+.appointment-item input:active,
+.appointment-item textarea:active {
   border: 2px solid #000000;
 }
 
@@ -199,14 +261,12 @@ a {
 /*Каталог*/
 
 .page-title {
-  font-family: "Roboto-medium", Arial, sans-serif;
   font-size: 55px;
   line-height: 55px;
   background-color: #eeeeee;
 }
 
 .filter legend {
-  font-family: "Roboto-bold", Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.05px;
@@ -214,14 +274,12 @@ a {
 }
 
 .cost {
-  font-family: "Roboto-Regular", Arial, sans-serif;
   color: #283136;
   line-height: 22px;
   text-transform: uppercase;
 }
 
 .cost input {
-  font-family: "Roboto-Regular", Arial, sans-serif;
   color: #283136;
   line-height: 22px;
   text-transform: uppercase;
@@ -232,7 +290,6 @@ a {
 .filter-option-grid,
 .filter-option-specific {
   list-style: none;
-  font-family: "Roboto-Regular", Arial, sans-serif;
   line-height: 20px;
   color: rgb(40, 49, 54);
 }
@@ -248,7 +305,6 @@ a {
 }
 
 .filter-button {
-  font-family: "Roboto-medium", Arial, sans-serif;
   background-color: rgb(238, 238, 238);
   color: rgb(0, 0, 0);
   line-height: 18px;
@@ -264,7 +320,6 @@ a {
 }
 
 .catalog p {
-  font-family: "Roboto-Regular", Arial, sans-serif;
   line-height: 22px;
   text-transform: uppercase;
 }
@@ -274,7 +329,6 @@ a {
 }
 
 .sort {
-  font-family: "Roboto-Regular", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
