@@ -264,6 +264,7 @@ html {
   font-size: 55px;
   line-height: 55px;
   background-color: #eeeeee;
+  font-weight: 500;
 }
 
 .filter legend {
@@ -310,17 +311,19 @@ html {
   line-height: 18px;
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
   background-color: rgb(223, 223, 223);
 }
 
-.filter-button:focus {
+.filter-button:active {
   background-color: rgb(213, 213, 213);
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog p {
-  line-height: 22px;
+.catalog > p {
+  font-size: 18px;
+  line-height: 18px;
   text-transform: uppercase;
 }
 
@@ -331,6 +334,7 @@ html {
 .sort {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -357,6 +361,7 @@ html {
 }
 
 .name-product {
+  line-height: 30px;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -364,9 +369,15 @@ html {
 .product-description {
   color: rgb(102, 102, 102);
   line-height: 18px;
+  font-weight: 400;
+  text-transform: none;
 }
 
-.button-price:focus {
+.button-price {
+  font-weight: 500;
+}
+
+.button-price:active {
   color: rgb(255, 255, 255);
 }
 
@@ -375,6 +386,9 @@ html {
 }
 
 .pagination-item {
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
   background-color: rgb(238, 238, 238);
   color: rgb(0, 0, 0);
 }
@@ -389,7 +403,8 @@ html {
 }
 
 .pagination-item-current {
+  line-height: 18px;
+  font-weight: 500;
   border: 3px solid rgb(219, 219, 219);
   background-color: rgb(255, 255, 255);
 }
-
