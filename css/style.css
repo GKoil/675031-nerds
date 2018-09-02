@@ -26,6 +26,17 @@ html {
   box-sizing: content-box;
 }
 
+.page-wrapper {
+  width: 1440px;
+  margin: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .button {
   font: inherit;
 
@@ -154,13 +165,76 @@ html {
 .main-header {
   background-color: #eeeeee;
   text-transform: uppercase;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 49px;
+  /*Временно для сетки*/
+  min-height: 114px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /*Временно для сетки*/
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+
+  /* Временно для сетки */
+  outline: 1px solid #00CA74;
+}
+
+.user-menu {
+  display: flex;
+  width: 800px;
+  margin-left: auto;
+  justify-content: space-between;
+
+  /*Временно*/
+  outline: 1px solid #ca919c;
+
 }
 
 .site-navigation,
 .user-basket {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid #d7373b;
+
   list-style: none;
   line-height: 30px;
   font-weight: 500;
+}
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-navigation li {
+  width: auto;
+  padding-top: 26px;
+  padding-left: 45px;
+}
+
+.site-navigation li:first-child {
+  padding-left: 1px;
+}
+
+.site-navigation li:nth-child(3) {
+  padding-left: 49px;
+}
+
+.user-basket {
+
+}
+
+.user-basket li {
+  padding-top: 26px;
 }
 
 .site-navigation a,
@@ -183,6 +257,10 @@ html {
   background-color: #eeeeee;
 }
 
+.content-slider {
+  margin-right: 55px;
+}
+
 .slider b {
   font-size: 55px;
   line-height: 55px;
@@ -195,21 +273,58 @@ html {
 }
 
 .slider-button {
+  display: block;
+  width: 240px;
+  height: 50px;
   font-weight: 500;
   line-height: 18px;
+  vertical-align: center;
 }
 
 .slider-radio {
   list-style: none;
 }
 
+.slider-1 {
+  display: flex;
+  min-height: 430px;
+  flex-wrap: wrap;
+  padding: 0 101px;
+  /*Временно*/
+  outline: 1px solid #d7373b;
+}
+
+.slider-1 p:first-child {
+  max-width: 376px;
+
+  /*Временно*/
+  outline: 1px solid #d7373b;
+}
+
+.slider-1 p:last-of-type {
+  max-width: 376px;
+  /*Временно*/
+  outline: 1px solid #d7373b;
+}
+
+.slider-1 a {
+
+}
+
 .features-list {
+  display: flex;
   list-style: none;
 }
 
 .feature-item:nth-child(1) {
+  display: flex;
+  flex-direction: column;
   background-image: url("../img/illustration-1.png");
   background-repeat: no-repeat;
+  padding-top: 150px;
+
+  /*Верменно*/
+  outline: 1px solid #d7373b;
 }
 
 .feature-item:nth-child(2) {

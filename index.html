@@ -8,162 +8,168 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation"> <!--Меню-->
-        <a class="main-header-logo" href="#">
-          <img src="img/nerds-logo-1.svg" width="160" height="65" alt="Логотип компании «Nerds»">  <!--Логотип-->
-        </a>
-        <ul class="site-navigation">
-          <li><a href="atelier.html">Студия</a></li>
-          <li><a href="client.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-basket">
-          <li><a href="#">Корзина</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
-      <h1 class="visually-hidden">Веб студия «Nerds»</h1>
-      <div class="slider">
-        <section class="slider-1">  <!--Слайдер-->
-          <p><b>Долго, дорого, скурпулезно.</b></p>
-          <p class="text-property">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="slider-button button" href="#">Узнать больше</a>
-          <img src="img/slide1.png" width="698" height="413" alt="Слайдер 1">
+    <div class="page-wrapper">
+      <header class="main-header">
+        <nav class="main-navigation clearfix"> <!--Меню-->
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo-1.svg" width="160" height="65" alt="Логотип компании «Nerds»">  <!--Логотип-->
+          </a>
+          <div class="user-menu">
+            <ul class="site-navigation">
+              <li><a href="atelier.html">Студия</a></li>
+              <li><a href="client.html">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="user-basket">
+              <li><a href="#">Корзина</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="container">
+        <h1 class="visually-hidden">Веб студия «Nerds»</h1>
+        <div class="slider">
+          <section class="slider-1">  <!--Слайдер-->
+            <div class="content-slider">
+              <p class=""><b>Долго, дорого, скурпулезно.</b></p>
+              <p class="text-property">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="slider-button button" href="#">Узнать больше</a>
+            </div>
+            <img src="img/slide1.png" width="698" height="413" alt="Слайдер 1">
+          </section>
+          <section class="slider-2">
+            <p><b>Любим математику как никто другой</b></p>
+            <p class="text-property">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-button button" href="#">Узнать больше</a>
+            <img src="img/slide2.png" width="663" height="430" alt="Слайдер 2">
+          </section>
+          <section class="slider-3">
+            <p><b>Только ночь, только хардкор</b></p>
+            <p class="text-property">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="slider-button button" href="#">Узнать больше</a>
+            <img src="img/slide3.png" width="759" height="411" alt="Слайдер 3">
+          </section>
+
+          <ul> <!--Переключатель слайдов-->
+            <li class="slider-radio">
+              <button type="button" class="slider-btn" aria-label="Первый слайд">
+              </button>
+            </li>
+            <li class="slider-radio">
+              <button type="button" class="slider-btn" aria-label="Второй слайд">
+              </button>
+            </li>
+            <li class="slider-radio">
+              <button type="button" class="slider-btn" aria-label="Третий слайд">
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <section class="features">
+          <h2 class="visually-hidden">Услуги</h2>
+          <ul class="features-list">
+            <li class="feature-item">
+              <h3>Веб сайты</h3>
+              <p class="text-property">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a class="button" href="#">Заказать</a>
+            </li>
+            <li class="feature-item">
+              <h3>Приложения</h3>
+              <p class="text-property">Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a class="button green" href="#">Заказать</a>
+            </li>
+            <li class="feature-item">
+              <h3>Презентации</h3>
+              <p class="text-property">Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a class="button yellow" href="#">Заказать</a>
+            </li>
+          </ul>
         </section>
-        <section class="slider-2">
-          <p><b>Любим математику как никто другой</b></p>
-          <p class="text-property">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="slider-button button" href="#">Узнать больше</a>
-          <img src="img/slide2.png" width="663" height="430" alt="Слайдер 2">
+        <section class="about">
+          <h2 class="visually-hidden">О нас</h2>
+          <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="text-property">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p>Выполняем заказы на разработку:</p>
+          <ul class="amenities">
+            <li class="text-property">Веб-сайтов любой сложности</li>
+            <li class="text-property">Мобильных приложений для iOS и Android</li>
+            <li class="text-property">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+          <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип компании «Nerds»">
+          <p class="about-figure">с 2004 года Любим точность во всем:</p>
+          <ul class="our-advantages">
+            <li class="our-advantages-list">
+              <p>146<span class="our-advantages-list-percent">%</span></p>
+              <p>Уровень сомоотдачи</p>
+            </li>
+            <li class="our-advantages-list">
+              <p>100<span class="our-advantages-list-percent">%</span></p>
+              <p>Соблюдение сроков</p>
+            </li>
+            <li class="our-advantages-list">
+              <p>50<span class="our-advantages-list-percent">%</span></p>
+              <p>Минимальная предоплата</p>
+            </li>
+          </ul>
         </section>
-        <section class="slider-3">
-          <p><b>Только ночь, только хардкор</b></p>
-          <p class="text-property">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="slider-button button" href="#">Узнать больше</a>
-          <img src="img/slide3.png" width="759" height="411" alt="Слайдер 3">
+        <section class="partners">
+          <ul class="our-partners">
+            <li>
+              <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png%20copy.png" width="199" height="68" alt="Партнёр «Htmlacademy»"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/logo-2.png%20copy.png" width="209" height="90" alt="Партнёр «Borodinski»"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/logo-3.png%20copy.png" width="185" height="52" alt="Партнёр «Pink»"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/logo-4.png%20copy.png" width="173" height="84" alt="Партнёр «Mishka»"></a>
+            </li>
+          </ul>
+        </section>
+        <section class="maps">
+          <section class="maps-address">
+            <p>Nёrds design studio</p>
+            <p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
+            <p><a class="telephone" href="tel:+7(812)275-75-75"> тел. +7 (812) 275-75-75</a></p>
+            <a class="button" href="contacts-popap.html">Напишите нам</a>
+          </section>
+          <img src="img/map-marker.png" width="1440" height="416" alt="Карта нашего местонахождения">
         </section>
 
-        <ul> <!--Переключатель слайдов-->
-          <li class="slider-radio">
-            <button type="button" class="slider-btn" aria-label="Первый слайд">
-            </button>
-          </li>
-          <li class="slider-radio">
-            <button type="button" class="slider-btn" aria-label="Второй слайд">
-            </button>
-          </li>
-          <li class="slider-radio">
-            <button type="button" class="slider-btn" aria-label="Третий слайд">
-            </button>
-          </li>
+      </main>
+      <footer class="main-footer">
+        <ul class="footer-social">  <!--Кнопки на соц. сети-->
+          <li><a class="social-button" href="#" aria-label="Читайте нас в Вконтакте"></a></li>
+          <li><a class="social-button" href="#" aria-label="Читайте нас в Фейсбуке"></a></li>
+          <li><a class="social-button" href="#" aria-label="Смотрите нас в Инстаграме"></a></li>
         </ul>
-      </div>
-
-      <section class="features">
-        <h2 class="visually-hidden">Услуги</h2>
-        <ul class="features-list">
-          <li class="feature-item">
-            <h3>Веб сайты</h3>
-            <p class="text-property">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button" href="#">Заказать</a>
-          </li>
-          <li class="feature-item">
-            <h3>Приложения</h3>
-            <p class="text-property">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button green" href="#">Заказать</a>
-          </li>
-          <li class="feature-item">
-            <h3>Презентации</h3>
-            <p class="text-property">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button yellow" href="#">Заказать</a>
-          </li>
-        </ul>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </footer>
+      <section class="modal modal-letter">
+        <h2 class="visually-hidden">Связаться с нами</h2>
+        <p>Напишите нам</p>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-item">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="full-name" placeholder="Имя Фамилия">
+          </p>
+          <p class="appointment-item">
+            <label for="email-user">Ваш e-mail:</label>
+            <input type="email" id="email-user" name="email" placeholder="email@example.com">
+          </p>
+          <p class="appointment-item">
+            <label for="letter">Текст письма:</label>
+            <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button" aria-label="Закрыть окно формы"></button>
       </section>
-      <section class="about">
-        <h2 class="visually-hidden">О нас</h2>
-        <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p class="text-property">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>Выполняем заказы на разработку:</p>
-        <ul class="amenities">
-          <li class="text-property">Веб-сайтов любой сложности</li>
-          <li class="text-property">Мобильных приложений для iOS и Android</li>
-          <li class="text-property">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-        <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип компании «Nerds»">
-        <p class="about-figure">с 2004 года Любим точность во всем:</p>
-        <ul class="our-advantages">
-          <li class="our-advantages-list">
-            <p>146<span class="our-advantages-list-percent">%</span></p>
-            <p>Уровень сомоотдачи</p>
-          </li>
-          <li class="our-advantages-list">
-            <p>100<span class="our-advantages-list-percent">%</span></p>
-            <p>Соблюдение сроков</p>
-          </li>
-          <li class="our-advantages-list">
-            <p>50<span class="our-advantages-list-percent">%</span></p>
-            <p>Минимальная предоплата</p>
-          </li>
-        </ul>
-      </section>
-      <section class="partners">
-        <ul class="our-partners">
-          <li>
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png%20copy.png" width="199" height="68" alt="Партнёр «Htmlacademy»"></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/logo-2.png%20copy.png" width="209" height="90" alt="Партнёр «Borodinski»"></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/logo-3.png%20copy.png" width="185" height="52" alt="Партнёр «Pink»"></a>
-          </li>
-          <li>
-            <a href="#"><img src="img/logo-4.png%20copy.png" width="173" height="84" alt="Партнёр «Mishka»"></a>
-          </li>
-        </ul>
-      </section>
-      <section class="maps">
-        <section class="maps-address">
-          <p>Nёrds design studio</p>
-          <p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
-          <p><a class="telephone" href="tel:+7(812)275-75-75"> тел. +7 (812) 275-75-75</a></p>
-          <a class="button" href="contacts-popap.html">Напишите нам</a>
-        </section>
-        <img src="img/map-marker.png" width="1440" height="416" alt="Карта нашего местонахождения">
-      </section>
-
-    </main>
-    <footer class="main-footer">
-      <ul class="footer-social">  <!--Кнопки на соц. сети-->
-        <li><a class="social-button" href="#" aria-label="Читайте нас в Вконтакте"></a></li>
-        <li><a class="social-button" href="#" aria-label="Читайте нас в Фейсбуке"></a></li>
-        <li><a class="social-button" href="#" aria-label="Смотрите нас в Инстаграме"></a></li>
-      </ul>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </footer>
-    <section class="modal modal-letter">
-      <h2 class="visually-hidden">Связаться с нами</h2>
-      <p>Напишите нам</p>
-      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="appointment-item">
-          <label for="name">Ваше имя</label>
-          <input type="text" id="name" name="full-name" placeholder="Имя Фамилия">
-        </p>
-        <p class="appointment-item">
-          <label for="email-user">Ваш e-mail:</label>
-          <input type="email" id="email-user" name="email" placeholder="email@example.com">
-        </p>
-        <p class="appointment-item">
-          <label for="letter">Текст письма:</label>
-          <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button" aria-label="Закрыть окно формы"></button>
-    </section>
+    </div>
   </body>
 </html>
