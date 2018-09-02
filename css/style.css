@@ -10,6 +10,13 @@ body {
   text-transform: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
 a {
   text-decoration: none;
 }
@@ -28,7 +35,7 @@ html {
 
 .page-wrapper {
   width: 1440px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .clearfix::after {
@@ -36,6 +43,13 @@ html {
   display: table;
   clear: both;
 }
+
+/*.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}*/
 
 .button {
   font: inherit;
@@ -255,10 +269,15 @@ html {
 
 .slider {
   background-color: #eeeeee;
+  position: relative;
 }
 
 .content-slider {
+  padding-top: 60px;
   margin-right: 55px;
+
+  /*Временно*/
+  outline: 1px solid #ca919c;
 }
 
 .slider b {
@@ -270,6 +289,7 @@ html {
 .text-property {
   color: rgb(40, 49, 54);
   font-weight: 400;
+  padding-top: 11px;
 }
 
 .slider-button {
@@ -287,14 +307,14 @@ html {
 
 .slider-1 {
   display: flex;
-  min-height: 430px;
+  padding: 18px 140px 0 140px;
   flex-wrap: wrap;
-  padding: 0 101px;
   /*Временно*/
   outline: 1px solid #d7373b;
 }
 
 .slider-1 p:first-child {
+  margin: 0;
   max-width: 376px;
 
   /*Временно*/
