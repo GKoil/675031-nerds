@@ -10,6 +10,7 @@ body {
   text-transform: none;
 }
 
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -37,8 +38,7 @@ html {
   width: 1440px;
   margin: 0 auto;
 }
-
-.clearfix::after {
+clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -99,8 +99,19 @@ html {
   background-color: #e5a722;
 }
 
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 140px;
+
+
+  /*Временно*/
+  outline: 1px solid #00CA74;
+}
+
 .about > p:first-of-type {
-  font-size: 45px;
+  font-size: 16px;
   line-height: 45px;
   font-weight: 500;
 }
@@ -111,6 +122,23 @@ html {
 
 .about .about-figure {
   text-transform: uppercase;
+}
+
+.about-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 650px;
+
+
+  /*Временно*/
+  outline: 1px solid #ca00c2;
+}
+
+.about-logo {
+  width: 360px;
+
+  /*Временно*/
+  outline: 1px solid #ca00c2;
 }
 
 .our-advantages {
@@ -188,6 +216,7 @@ html {
 
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   /*Временно для сетки*/
@@ -203,6 +232,7 @@ html {
 
 .user-menu {
   display: flex;
+  flex-wrap: wrap;
   width: 800px;
   margin-left: auto;
   justify-content: space-between;
@@ -215,6 +245,7 @@ html {
 .site-navigation,
 .user-basket {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   outline: 1px solid #d7373b;
@@ -273,6 +304,9 @@ html {
 }
 
 .content-slider {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding-top: 60px;
   margin-right: 55px;
 
@@ -293,7 +327,10 @@ html {
 }
 
 .slider-button {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 240px;
   height: 50px;
   font-weight: 500;
@@ -333,18 +370,31 @@ html {
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 200px 0 140px;
+
   list-style: none;
+
+  /*Временно*/
+  outline: 1px solid #0400d7;
 }
 
-.feature-item:nth-child(1) {
+.feature-item {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  background-image: url("../img/illustration-1.png");
-  background-repeat: no-repeat;
   padding-top: 150px;
+  width: 300px;
 
   /*Верменно*/
   outline: 1px solid #d7373b;
+}
+
+.feature-item:nth-child(1) {
+
+  background-image: url("../img/illustration-1.png");
+  background-repeat: no-repeat;
 }
 
 .feature-item:nth-child(2) {
@@ -392,6 +442,28 @@ html {
   border: 2px solid #e74246;
   color: #e74246;
 }
+
+.partners {
+  padding: 0 140px;
+  outline: 1px solid #18d700;
+}
+
+.our-partners {
+  margin: 0 auto;
+  padding: 0 43px 0 31px;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+
+  list-style: none;
+  align-items: center;
+
+  /*Верменно*/
+  outline: 1px solid #d7373b;
+}
+
 
 /*Каталог*/
 
