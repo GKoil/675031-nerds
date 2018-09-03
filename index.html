@@ -29,61 +29,55 @@
       </header>
       <main class="container">
         <h1 class="visually-hidden">Веб студия «Nerds»</h1>
-        <div class="slider">
-          <section class="slider-1">  <!--Слайдер-->
-            <div class="content-slider">
-              <p class=""><b>Долго, дорого, скрупулезно.</b></p>
-              <p class="text-property">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-              <a class="slider-button button" href="#">Узнать больше</a>
-            </div>
-            <img src="img/slide1.png" width="698" height="413" alt="Слайдер 1">
-          </section>
-          <section class="slider-2">
-            <p><b>Любим математику как никто другой</b></p>
-            <p class="text-property">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="slider-button button" href="#">Узнать больше</a>
-            <img src="img/slide2.png" width="663" height="430" alt="Слайдер 2">
-          </section>
-          <section class="slider-3">
-            <p><b>Только ночь, только хардкор</b></p>
-            <p class="text-property">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="slider-button button" href="#">Узнать больше</a>
-            <img src="img/slide3.png" width="759" height="411" alt="Слайдер 3">
-          </section>
 
-          <ul> <!--Переключатель слайдов-->
-            <li class="slider-radio">
-              <button type="button" class="slider-btn" aria-label="Первый слайд">
-              </button>
-            </li>
-            <li class="slider-radio">
-              <button type="button" class="slider-btn" aria-label="Второй слайд">
-              </button>
-            </li>
-            <li class="slider-radio">
-              <button type="button" class="slider-btn" aria-label="Третий слайд">
-              </button>
-            </li>
-          </ul>
-        </div>
+        <section class="slider-new">
+          <div class="container-slider">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+            <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+            <div class="slider-controls">
+              <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+              <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+              <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item">
+                <h3>Долго, дорого,<br> скрупулезно.</h3>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-item">
+                <h3>Любим математику как никто другой</h3>
+                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-item">
+                <h3>Только ночь,<br> только хардкор</h3>
+                <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+            </ul>
+          </div>
+        </section>
 
         <section class="features">
           <h2 class="visually-hidden">Услуги</h2>
           <ul class="features-list">
             <li class="feature-item">
               <h3>Веб сайты</h3>
-              <p class="text-property">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="button" href="#">Заказать</a>
+              <p class="text-property text-items text-items-1">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a class="button button-service" href="#">Заказать</a>
             </li>
             <li class="feature-item">
               <h3>Приложения</h3>
-              <p class="text-property">Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="button green" href="#">Заказать</a>
+              <p class="text-property text-items text-items-2">Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a class="button green button-service" href="#">Заказать</a>
             </li>
             <li class="feature-item">
               <h3>Презентации</h3>
-              <p class="text-property">Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="button yellow" href="#">Заказать</a>
+              <p class="text-property text-items text-items-3">Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a class="button yellow button-service" href="#">Заказать</a>
             </li>
           </ul>
         </section>
@@ -138,9 +132,9 @@
         <section class="maps">
           <section class="maps-address">
             <p>Nёrds design studio</p>
-            <p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
+            <p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
             <p><a class="telephone" href="tel:+7(812)275-75-75"> тел. +7 (812) 275-75-75</a></p>
-            <a class="button" href="contacts-popap.html">Напишите нам</a>
+            <a class="button button-info-maps" href="contacts-popap.html">Напишите нам</a>
           </section>
           <img src="img/map-marker.png" width="1440" height="416" alt="Карта нашего местонахождения">
         </section>
