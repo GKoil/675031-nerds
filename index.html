@@ -8,7 +8,6 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="page-wrapper">
       <header class="main-header">
         <nav class="main-navigation clearfix"> <!--Меню-->
           <a class="main-header-logo" href="index.html">
@@ -60,7 +59,7 @@
             </ul>
           </div>
         </section>
-
+    <div class="page-wrapper">
         <section class="features">
           <h2 class="visually-hidden">Услуги</h2>
           <ul class="features-list">
@@ -84,15 +83,19 @@
         <section class="about">
           <h2 class="visually-hidden">О нас</h2>
           <div class="about-text">
-            <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-            <p class="text-property">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
-              креатива. Работаем не покладая рук, как роботы.</p>
-            <p>Выполняем заказы на разработку:</p>
-            <ul class="amenities">
-              <li class="text-property">Веб-сайтов любой сложности</li>
-              <li class="text-property">Мобильных приложений для iOS и Android</li>
-              <li class="text-property">Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
+            <div class="about-text-1">
+              <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+              <p class="text-property">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+                креатива. Работаем не покладая рук, как роботы.</p>
+            </div>
+            <div class="about-text-2">
+              <p>Выполняем заказы на разработку:</p>
+              <ul class="amenities">
+                <li class="text-property">Веб-сайтов любой сложности</li>
+                <li class="text-property">Мобильных приложений для iOS и Android</li>
+                <li class="text-property">Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+            </div>
           </div>
           <div class="about-logo">
             <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип компании «Nerds»">
@@ -138,37 +141,43 @@
           </section>
           <img src="img/map-marker.png" width="1440" height="416" alt="Карта нашего местонахождения">
         </section>
-
+    </div>
       </main>
       <footer class="main-footer">
-        <ul class="footer-social">  <!--Кнопки на соц. сети-->
-          <li><a class="social-button" href="#" aria-label="Читайте нас в Вконтакте"></a></li>
-          <li><a class="social-button" href="#" aria-label="Читайте нас в Фейсбуке"></a></li>
-          <li><a class="social-button" href="#" aria-label="Смотрите нас в Инстаграме"></a></li>
-        </ul>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="page-wrapper">
+          <div class="main-footer-info">
+            <ul class="footer-social">  <!--Кнопки на соц. сети-->
+              <li><a class="social-button" href="#" aria-label="Читайте нас в Вконтакте"></a></li>
+              <li><a class="social-button" href="#" aria-label="Читайте нас в Фейсбуке"></a></li>
+              <li><a class="social-button" href="#" aria-label="Смотрите нас в Инстаграме"></a></li>
+            </ul>
+            <div class="footer-text">
+              <p>Давайте дружить, это выгодно!</p>
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+          </div>
+        </div>
       </footer>
       <section class="modal modal-letter">
         <h2 class="visually-hidden">Связаться с нами</h2>
         <p>Напишите нам</p>
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="appointment-item">
+          <div class="appointment-item">
             <label for="name">Ваше имя</label>
             <input type="text" id="name" name="full-name" placeholder="Имя Фамилия">
-          </p>
-          <p class="appointment-item">
+          </div>
+          <div class="appointment-item">
             <label for="email-user">Ваш e-mail:</label>
             <input type="email" id="email-user" name="email" placeholder="email@example.com">
-          </p>
-          <p class="appointment-item">
+          </div>
+          <div class="appointment-item">
             <label for="letter">Текст письма:</label>
             <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="button" type="submit">Отправить</button>
+          </div>
+          <button class="button button-modal" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button" aria-label="Закрыть окно формы"></button>
       </section>
-    </div>
+
   </body>
 </html>

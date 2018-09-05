@@ -38,7 +38,7 @@ html {
   width: 1440px;
   margin: 0 auto;
 }
-clearfix::after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -105,7 +105,7 @@ clearfix::after {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 140px;
-
+  margin-bottom: 112px;
 
   /*Временно*/
   outline: 1px solid #00CA74;
@@ -123,6 +123,9 @@ clearfix::after {
 
 .about .about-figure {
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 17px;
 }
 
 .about-text {
@@ -135,13 +138,41 @@ clearfix::after {
   outline: 1px solid #ca00c2;
 }
 
-.about-text p:first-child {
+.about-text-1 {
+  padding-top: 34px;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 206px;
+  justify-content: space-between;
+}
+
+.about-text-1 p:first-child {
   margin: 0;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-  padding-top: 34px;
-  padding-bottom: 12px;
+}
+
+.about-text-1 p:last-child {
+  margin: 0;
+}
+
+.about-text-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 160px;
+  padding-top: 39px;
+}
+
+.about-text-2 p:first-child {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .about-logo {
@@ -151,29 +182,36 @@ clearfix::after {
   outline: 1px solid #ca00c2;
 }
 
-.about-logo li {
-
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 9px;
+  margin: 0px;
+  min-height: 153px;
 }
 
 .our-advantages {
   margin: 0 auto;
   padding: 0;
-  width: 343px;
+  width: 359px;
   list-style: none;
   display: flex;
+
   outline: 1px solid #ca00c2;
 }
 
 .our-advantages-list {
-
   width: 343px;
-
 }
 
 .our-advantages-list p:first-child {
   font-size: 45px;
   line-height: 10.06px;
   font-weight: 700;
+  padding-top: 3px;
 }
 
 .our-advantages-list-percent {
@@ -185,6 +223,14 @@ clearfix::after {
   font-weight: 400;
   color: rgb(40, 49, 54);
   line-height: 18px;
+
+  margin: 0px;
+  margin-top: -7px;
+  padding-left: 2px;
+}
+
+.maps {
+  margin-bottom: 60px;
 }
 
 .maps-address p:first-child {
@@ -227,10 +273,35 @@ clearfix::after {
   font-weight: 400;
 }
 
+.modal {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 73px;
+  padding-left: 103px;
+
+  /*Временно*/
+  outline: 1px solid #d7373b;
+}
+
 .modal-letter > p:first-of-type {
+  margin: 0;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+}
+
+.appointment-form {
+  margin-top: 49px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 261px;
+}
+
+.appointment-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .appointment-item-text p {
@@ -241,8 +312,8 @@ clearfix::after {
 .main-header {
   background-color: #eeeeee;
   text-transform: uppercase;
-  padding-left: 140px;
-  padding-right: 140px;
+  padding-left: 341px;
+  padding-right: 340px;
   padding-top: 49px;
   /*Временно для сетки*/
   min-height: 114px;
@@ -251,9 +322,6 @@ clearfix::after {
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  /*Временно для сетки*/
 }
 
 .main-header-logo {
@@ -292,11 +360,11 @@ clearfix::after {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
+
+  padding-top: 26px;
 }
 
 .site-navigation li {
-  width: auto;
-  padding-top: 26px;
   padding-left: 45px;
 }
 
@@ -309,10 +377,6 @@ clearfix::after {
 }
 
 .user-basket {
-
-}
-
-.user-basket li {
   padding-top: 26px;
 }
 
@@ -401,7 +465,7 @@ clearfix::after {
 .slider-list {
   margin: 0;
   margin-bottom: 80px;
-  padding: 0;
+  padding: 0 200px;
 
   list-style: none;
 }
@@ -495,6 +559,7 @@ clearfix::after {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 200px 0 140px;
+  margin: 0;
 
   list-style: none;
 
@@ -581,6 +646,7 @@ clearfix::after {
 }
 
 .partners {
+  margin-bottom: 118px;
   padding: 0 140px;
   outline: 1px solid #18d700;
 }
@@ -601,16 +667,61 @@ clearfix::after {
   outline: 1px solid #d7373b;
 }
 
+.our-partners li:nth-child(1) {
+  margin-top: 7px;
+  margin-right: 96px;
+}
+
+.our-partners li:nth-child(2) {
+  margin-right: 103px;
+}
+
+.our-partners li:nth-child(3) {
+  margin-right: 121px;
+}
+
+.our-partners li:nth-child(4) {
+  margin-top: 4px;
+}
+
 .maps-address {
   position: absolute;
   left: 341px;
-  top: 1791px;
+  top: 1897px;
   display: flex;
   flex-direction: column;
   padding: 31px 50px 47px 50px;
   width: 319px;
   min-height: 308px;
   background-color: #ffffff;
+
+  /*Верменно*/
+  outline: 1px solid #d7373b;
+}
+
+.footer-social {
+  display: flex;
+  margin-right: 139px;
+
+  /*Верменно*/
+  outline: 1px solid #d7373b;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+
+  /*Верменно*/
+  outline: 1px solid #d7373b;
+}
+
+.footer-text p:first-child {
+  margin: 0;
+  padding-top: 9px;
+}
+
+.main-footer-info {
+  display: flex;
 
   /*Верменно*/
   outline: 1px solid #d7373b;
@@ -623,6 +734,11 @@ clearfix::after {
   line-height: 55px;
   background-color: #eeeeee;
   font-weight: 500;
+
+  margin: 0 auto;
+  padding-top: 78px;
+  padding-bottom: 108px;
+  text-align: center;
 }
 
 .filter legend {
