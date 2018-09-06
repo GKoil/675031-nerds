@@ -35,7 +35,7 @@ html {
 }
 
 .page-wrapper {
-  width: 1440px;
+  width: 1200px;
   margin: 0 auto;
 }
 .clearfix::after {
@@ -47,6 +47,8 @@ html {
 .container-slider {
   width: 1839px;
   margin: 0 auto;
+  position: relative;
+  background-color: #eeeeee;
 }
 
 .button {
@@ -102,7 +104,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 140px;
+  padding: 0 20px;
   margin-bottom: 112px;
 
   /*Временно*/
@@ -229,6 +231,8 @@ html {
 
 .maps {
   margin-bottom: 60px;
+  position: relative;
+  left: 200px;
 }
 
 .maps-address p:first-child {
@@ -310,9 +314,7 @@ html {
 .main-header {
   background-color: #eeeeee;
   text-transform: uppercase;
-  padding-left: 341px;
-  padding-right: 340px;
-  padding-top: 49px;
+
   /*Временно для сетки*/
   min-height: 114px;
 }
@@ -321,7 +323,10 @@ html {
   display: flex;
   flex-wrap: wrap;
   width: 1160px;
-  margin: 0 auto;
+
+  margin-left: 341px;
+  margin-right: 340px;
+  padding-top: 49px;
 }
 
 .main-header-logo {
@@ -378,6 +383,7 @@ html {
 
 .user-basket {
   padding-top: 26px;
+  padding-left: 41px;
 }
 
 .site-navigation a,
@@ -558,7 +564,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 200px 0 140px;
+  padding: 0 80px 0 20px;
   margin: 0;
 
   list-style: none;
@@ -602,12 +608,9 @@ html {
   text-transform: uppercase;
 }
 
-.text-items-1 {
-  width: 285px;
-}
-
+.text-items-1,
 .text-items-3 {
-  width: 280px;
+  padding-right: 56px;
 }
 
 .button-service {
@@ -647,7 +650,7 @@ html {
 
 .partners {
   margin-bottom: 118px;
-  padding: 0 140px;
+  padding: 0 20px;
   outline: 1px solid #18d700;
 }
 
@@ -686,8 +689,8 @@ html {
 
 .maps-address {
   position: absolute;
-  left: 341px;
-  top: 1897px;
+  left: 141px;
+  top: 53px;
   display: flex;
   flex-direction: column;
   padding: 31px 50px 47px 50px;
@@ -695,8 +698,7 @@ html {
   min-height: 308px;
   background-color: #ffffff;
 
-  /*Верменно*/
-  outline: 1px solid #d7373b;
+
 }
 
 .footer-social {
