@@ -38,6 +38,7 @@ html {
   width: 1200px;
   margin: 0 auto;
 }
+
 .clearfix::after {
   content: "";
   display: table;
@@ -106,9 +107,6 @@ html {
   flex-wrap: wrap;
   padding: 0 20px;
   margin-bottom: 112px;
-
-  /*Временно*/
-  outline: 1px solid #00CA74;
 }
 
 .about > p:first-of-type {
@@ -132,10 +130,6 @@ html {
   display: flex;
   flex-wrap: wrap;
   width: 650px;
-
-
-  /*Временно*/
-  outline: 1px solid #ca00c2;
 }
 
 .about-text-1 {
@@ -177,9 +171,6 @@ html {
 
 .about-logo {
   width: 360px;
-
-  /*Временно*/
-  outline: 1px solid #ca00c2;
 }
 
 .amenities {
@@ -199,12 +190,11 @@ html {
   width: 359px;
   list-style: none;
   display: flex;
-
-  outline: 1px solid #ca00c2;
+  flex-wrap: wrap;
 }
 
 .our-advantages-list {
-  width: 343px;
+  width: 119px;
 }
 
 .our-advantages-list p:first-child {
@@ -230,9 +220,11 @@ html {
 }
 
 .maps {
+  width: 1440px;
+  margin: auto;
   margin-bottom: 60px;
   position: relative;
-  left: 200px;
+  left: -1px;
 }
 
 .maps-address p:first-child {
@@ -324,17 +316,13 @@ html {
   flex-wrap: wrap;
   width: 1160px;
 
-  margin-left: 341px;
-  margin-right: 340px;
+  margin: 0 auto;
   padding-top: 49px;
 }
 
 .main-header-logo {
   width: 160px;
   height: 65px;
-
-  /* Временно для сетки */
-  outline: 1px solid #00CA74;
 }
 
 .user-menu {
@@ -343,10 +331,6 @@ html {
   width: 800px;
   margin-left: auto;
   justify-content: space-between;
-
-  /*Временно*/
-  outline: 1px solid #ca919c;
-
 }
 
 .site-navigation,
@@ -355,7 +339,6 @@ html {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  outline: 1px solid #d7373b;
 
   list-style: none;
   line-height: 30px;
@@ -383,7 +366,26 @@ html {
 
 .user-basket {
   padding-top: 26px;
+}
+
+.user-basket .user-basket-link {
+  position: relative;
   padding-left: 41px;
+}
+
+.user-basket-link:before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 1px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .site-navigation a,
@@ -568,9 +570,6 @@ html {
   margin: 0;
 
   list-style: none;
-
-  /*Временно*/
-  outline: 1px solid #0400d7;
 }
 
 .feature-item {
@@ -579,9 +578,6 @@ html {
   flex-direction: column;
   padding-top: 150px;
   width: 300px;
-
-  /*Верменно*/
-  outline: 1px solid #d7373b;
 }
 
 .feature-item:nth-child(1) {
@@ -651,7 +647,6 @@ html {
 .partners {
   margin-bottom: 118px;
   padding: 0 20px;
-  outline: 1px solid #18d700;
 }
 
 .our-partners {
@@ -665,9 +660,19 @@ html {
 
   list-style: none;
   align-items: center;
+}
 
-  /*Верменно*/
-  outline: 1px solid #d7373b;
+.partners-img {
+  opacity: 0.2;
+}
+
+.partners-img:hover,
+.partners-img:focus {
+  opacity: 1;
+}
+
+.partners-img:active {
+  opacity: 0.1;
 }
 
 .our-partners li:nth-child(1) {
@@ -744,7 +749,7 @@ html {
 }
 
 .container-page {
-  padding: 0 140px;
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
