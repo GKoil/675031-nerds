@@ -44,12 +44,10 @@ html {
   clear: both;
 }
 
-/*.container {
-  width: 1200px;
+.container-slider {
+  width: 1839px;
   margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}*/
+}
 
 .button {
   display: block;
@@ -322,6 +320,8 @@ html {
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .main-header-logo {
@@ -741,6 +741,23 @@ html {
   text-align: center;
 }
 
+.container-page {
+  padding: 0 140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  outline: 1px solid #134a0e;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  /*Верменно*/
+  outline: 1px solid #d7373b;
+}
+
 .filter legend {
   font-size: 18px;
   line-height: 30px;
@@ -795,6 +812,13 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.catalog {
+  display: flex;
+  flex-direction: column;
+
+  outline: 1px solid #d7373b;
+}
+
 .catalog > p {
   font-size: 18px;
   line-height: 18px;
@@ -803,6 +827,8 @@ html {
 
 .additional-filter {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .sort {
@@ -828,6 +854,18 @@ html {
 
 .catalog-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 760px;
+
+  outline: 1px solid #ca919c;
+}
+
+.catalog-list li {
+
 }
 
 .catalog-list-info {
@@ -857,6 +895,16 @@ html {
 
 .pagination-list {
   list-style: none;
+
+  display: flex;
+
+  outline: 1px solid #d7373b;
+}
+
+.catalog-filter {
+  display: flex;
+
+  outline: 1px solid #d7373b;
 }
 
 .pagination-item {
