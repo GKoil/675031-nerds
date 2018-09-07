@@ -33,23 +33,23 @@
           <section class="filter">
             <h2 class="visually-hidden">Фильтр шаблонов</h2>
             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru"> <!--Форма фильтр-->
-              <fieldset>
+              <fieldset class="filter-item">
                 <legend>Стоимость:</legend>
-                <label>
-                  <input type="range" name="radio" min="0" max="20000" value="15000">
-                </label>
-                <p>
-                  <label class="cost">
-                    От
-                    <input type="text" name="min price" value="0">
-                  </label>
-                  <label class="cost">
-                    До
-                    <input type="text" name="max price" value="15000">
-                  </label>
-                </p>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
+                </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-item-grid">
                 <legend>Сетка:</legend>
                 <ul class="grid-option">
                   <li class="filter-option-grid">
@@ -75,7 +75,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-item-special">
                 <legend>Особенности:</legend>
                 <ul class="specific-option">
                   <li class="filter-option-specific">
@@ -139,10 +139,12 @@
                 <a href="#">
                   <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон «Sedona»">
                 </a>
-                <div class="catalog-list-info">
-                  <h3 class="name-product">Sedona</h3>
-                  <p class="product-description">Информационный сайт для туристов</p>
-                  <a class="button button-price" href="#">9900 Руб.</a>
+                <div class="catalog-hidden">
+                  <div class="catalog-list-info">
+                    <h3 class="name-product">Sedona</h3>
+                    <p class="product-description">Информационный сайт для туристов</p>
+                    <a class="button button-price" href="#">9900 Руб.</a>
+                  </div>
                 </div>
               </li>
               <li class="catalog-item">
@@ -154,10 +156,12 @@
                 <a href="#">
                   <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон «Pink App»">
                 </a>
-                <div class="catalog-list-info">
-                  <h3 class="name-product">Pink App</h3>
-                  <p class="product-description">Продуктовый лендинг приложения для iOS и Android</p>
-                  <a class="button button-price" href="#">9900 Руб.</a>
+                <div class="catalog-hidden">
+                  <div class="catalog-list-info">
+                    <h3 class="name-product">Pink App</h3>
+                    <p class="product-description">Продуктовый лендинг приложения для iOS и Android</p>
+                    <a class="button button-price" href="#">9900 Руб.</a>
+                  </div>
                 </div>
               </li>
               <li class="catalog-item">
@@ -169,10 +173,12 @@
                 <a href="#">
                   <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон «Barbershop»">
                 </a>
-                <div class="catalog-list-info">
-                  <h3 class="name-product">Barbershop</h3>
-                  <p class="product-description">Сайт салона красоты. Для мужчин, да.</p>
-                  <a class="button button-price" href="#">9900 Руб.</a>
+                <div class="catalog-hidden">
+                  <div class="catalog-list-info">
+                    <h3 class="name-product">Barbershop</h3>
+                    <p class="product-description">Сайт салона красоты. Для мужчин, да.</p>
+                    <a class="button button-price" href="#">9900 Руб.</a>
+                  </div>
                 </div>
               </li>
               <li class="catalog-item">
@@ -184,10 +190,12 @@
                 <a href="#">
                   <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон «MISHKA»">
                 </a>
-                <div class="catalog-list-info">
-                  <h3 class="name-product">MISHKA</h3>
-                  <p class="product-description">Интернет-магазин вязаных игрушек</p>
-                  <a class="button button-price" href="#">9900 Руб.</a>
+                <div class="catalog-hidden">
+                  <div class="catalog-list-info">
+                    <h3 class="name-product">MISHKA</h3>
+                    <p class="product-description">Интернет-магазин вязаных игрушек</p>
+                    <a class="button button-price" href="#">9900 Руб.</a>
+                  </div>
                 </div>
               </li>
               <li class="catalog-item">
@@ -199,10 +207,12 @@
                 <a href="#">
                   <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон «A Plus»">
                 </a>
-                <div class="catalog-list-info">
-                  <h3 class="name-product">A Plus</h3>
-                  <p class="product-description">Лендинг курсов повышения квалификации</p>
-                  <a class="button button-price" href="#">9900 Руб.</a>
+                <div class="catalog-hidden">
+                  <div class="catalog-list-info">
+                    <h3 class="name-product">A Plus</h3>
+                    <p class="product-description">Лендинг курсов повышения квалификации</p>
+                    <a class="button button-price" href="#">9900 Руб.</a>
+                  </div>
                 </div>
               </li>
               <li class="catalog-item">
@@ -214,10 +224,12 @@
                 <a href="#">
                   <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон «КВАСТ»">
                 </a>
-                <div class="catalog-list-info">
-                  <h3 class="name-product">Кваст</h3>
-                  <p class="product-description">Промо-сайт производителя крафтового кваса</p>
-                  <a class="button button-price" href="#">9900 Руб.</a>
+                <div class="catalog-hidden">
+                  <div class="catalog-list-info">
+                    <h3 class="name-product">Кваст</h3>
+                    <p class="product-description">Промо-сайт производителя крафтового кваса</p>
+                    <a class="button button-price" href="#">9900 Руб.</a>
+                  </div>
                 </div>
               </li>
             </ul>

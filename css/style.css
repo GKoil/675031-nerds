@@ -373,12 +373,12 @@ html {
   padding-left: 41px;
 }
 
-.user-basket-link:before {
+.user-basket::before {
   content: "";
 
-  position: absolute;
-  top: 2px;
-  left: 1px;
+  position: relative;
+  top: 7px;
+  left: 16px;
 
   width: 15px;
   height: 15px;
@@ -743,6 +743,7 @@ html {
   font-weight: 500;
 
   margin: 0 auto;
+  margin-bottom: 56px;
   padding-top: 78px;
   padding-bottom: 108px;
   text-align: center;
@@ -753,8 +754,6 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  outline: 1px solid #134a0e;
 }
 
 .filter-form {
@@ -763,6 +762,123 @@ html {
   width: 300px;
   /*Верменно*/
   outline: 1px solid #d7373b;
+}
+
+.filter-item {
+  margin: 0 0 55px 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter-item-grid {
+  margin: 0 0 29px 0;
+  padding: 0;
+
+  border: none;
+}
+
+.grid-option li:nth-child(1),
+.grid-option li:nth-child(2) {
+  padding-bottom: 20px;
+}
+
+.filter-item-special {
+  margin: 0 0 13px -1px;
+  padding: 0;
+
+  border: none;
+}
+
+.specific-option li {
+  padding-bottom: 20px;
+}
+
+.range-filter {
+  width: 261px;
+  margin-top: 49px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 80px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 79px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
 }
 
 .filter legend {
@@ -807,6 +923,11 @@ html {
   background-color: rgb(238, 238, 238);
   color: rgb(0, 0, 0);
   line-height: 18px;
+
+  width: 260px;
+  padding: 16px;
+
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -870,12 +991,13 @@ html {
 
 .catalog-list {
   list-style: none;
-  margin: 0;
+  margin: 0 0 26px 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 760px;
+  min-height: 1947px;
 
   outline: 1px solid #ca919c;
 }
@@ -893,6 +1015,10 @@ html {
   flex-direction: column;
   padding-top: 35px;
   padding-bottom: 43px;
+}
+
+.catalog-hidden {
+  display: none;
 }
 
 .catalog-item-header {
@@ -939,7 +1065,7 @@ html {
 
 .pagination-list {
   list-style: none;
-  margin: 0;
+  margin: 0 0 55px 0;
   padding: 0;
 
   display: flex;
@@ -960,6 +1086,7 @@ html {
 
 .catalog-filter {
   display: flex;
+  margin-bottom: 53px;
 
   /*Временно*/
   outline: 1px solid #d7373b;
@@ -969,7 +1096,7 @@ html {
   font-size: 18px;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 2px 0 0 0;
 }
 
 
