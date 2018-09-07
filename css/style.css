@@ -268,14 +268,21 @@ html {
 }
 
 .modal {
-  width: 960px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 73px;
-  padding-left: 103px;
+  /*вкл выкл*/
+  display: none;
 
-  /*Временно*/
-  outline: 1px solid #d7373b;
+  width: 960px;
+  /*display: flex;*/
+  flex-direction: column;
+  padding-top: 67px;
+  padding-left: 98px;
+
+  z-index: 100;
+  position: fixed;
+  top: 71px;
+  left: 441px;
+  background-color: white;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
 .modal-letter > p:first-of-type {
@@ -286,21 +293,45 @@ html {
 }
 
 .appointment-form {
-  margin-top: 49px;
+  margin-top: 39px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 261px;
+  width: 761px;
+}
+
+.modal-text:focus::-webkit-input-placeholder {color: black}
+.modal-text:focus::-moz-placeholder          {color: black}
+.modal-text:focus:-moz-placeholder           {color: black}
+.modal-text:focus:-ms-input-placeholder      {color: black}
+
+.appointment-form-name-email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.appointment-form-name-email input {
+  padding: 13px 0 13px 16px;
+  width: 360px;
 }
 
 .appointment-item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 34px;
 }
 
-.appointment-item-text p {
-  font-weight: 700;
-  line-height: 18px;
+.appointment-item label {
+  padding-bottom: 12px;
+}
+
+.appointment-item textarea {
+  min-height: 118px;
+  resize: none;
+}
+
+.appointment-item-text textarea {
+  padding: 8px 0 0 12px;
 }
 
 .main-header {
@@ -702,8 +733,6 @@ html {
   width: 319px;
   min-height: 308px;
   background-color: #ffffff;
-
-
 }
 
 .footer-social {
@@ -732,6 +761,54 @@ html {
 
   /*Верменно*/
   outline: 1px solid #d7373b;
+}
+
+.button-modal {
+  width: 260px;
+  padding: 13px 0;
+  cursor: pointer;
+  margin-top: 11px;
+  margin-bottom: 84px;
+}
+
+.modal-close {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  right: 87px;
+  top: 86px;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+
+}
+
+.modal-close::before {
+  content: "";
+
+  position: absolute;
+  right: -2px;
+  top: -2px;
+
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.modal-close:hover::before,
+.modal-close:focus::before {
+  opacity: 1;
+}
+
+.modal-close:hover:active {
+  opacity: 0.1;
 }
 
 /*Каталог*/
@@ -943,8 +1020,6 @@ html {
 .catalog {
   display: flex;
   flex-direction: column;
-
-  outline: 1px solid #d7373b;
 }
 
 .catalog > p {
@@ -998,8 +1073,6 @@ html {
   justify-content: space-between;
   width: 760px;
   min-height: 1947px;
-
-  outline: 1px solid #ca919c;
 }
 
 .catalog-list li {
@@ -1072,9 +1145,6 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 443px;
-
-  /*Временно*/
-  outline: 1px solid #d7373b;
 }
 
 /*.pagination-list-number {
@@ -1087,9 +1157,6 @@ html {
 .catalog-filter {
   display: flex;
   margin-bottom: 53px;
-
-  /*Временно*/
-  outline: 1px solid #d7373b;
 }
 
 .catalog-filter p {
