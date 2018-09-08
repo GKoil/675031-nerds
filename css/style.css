@@ -40,7 +40,8 @@ html {
 }
 .line {
   position: absolute;
-  bottom: -346px;
+  left: 341px;
+  bottom: -70px;
   width: 1160px;
   min-height: 2px;
   background-color: rgb(238, 238, 238);
@@ -187,6 +188,7 @@ html {
   justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 9px;
+  padding-left: 36px;
   margin: 0;
   min-height: 153px;
 }
@@ -795,11 +797,13 @@ html {
 
 .footer-text p:first-child {
   margin: 0;
-  padding-top: 15px;
+  padding-top: 8px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .footer-text p:last-child {
-  margin: 16px 0 0 0;
+  margin: 9px 0 0 0;
 }
 
 .main-footer-info {
@@ -935,6 +939,7 @@ html {
 }
 
 .range-controls .scale {
+  margin-top: -2px;
   height: 2px;
 
   background: #d7dcde;
@@ -948,26 +953,33 @@ html {
 }
 
 .range-controls .toggle {
-  position: absolute;
-  top: 31px;
+  position: relative;
+  top: 28px;
   left: 0;
 
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 23px;
   padding: 0;
 
-  border: 8px solid #ffffff;
-  background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
-  border-radius: 50%;
+  /*border: 8px solid #ffffff;
+  background-color: #ababab;*/
+
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+
   cursor: pointer;
+
 }
 
 .range-controls .toggle-min {
+  position: absolute;
   left: 18px;
 }
 
 .range-controls .toggle-max {
+  position: absolute;
   left: 160px;
 }
 
@@ -1041,6 +1053,39 @@ html {
   color: rgba(40, 49, 54, 0.3);
 }
 
+.filter-option-grid label {
+  position: relative;
+
+  display: block;
+  cursor: pointer;
+}
+
+.filter-option-grid label::before {
+  content: "";
+  left: -39px;
+  top: -3px;
+
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #a6a6a6;
+  border-radius: 50%;
+}
+
+.filter-option-grid label::after {
+  content: "";
+
+  position: absolute;
+  left: -30.5px;
+  top: 5.5px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #a6a6a6;
+  border-radius: 50%;
+}
+
 .filter-button {
   background-color: rgb(238, 238, 238);
   color: rgb(0, 0, 0);
@@ -1084,10 +1129,8 @@ html {
 }
 
 .visual-button {
-
   width: 40px;
   margin: 0 0 0 48px;
-
 }
 
 .visual-button li {
@@ -1097,7 +1140,6 @@ html {
 }
 
 .sort-price-high::before {
-  
   content: "";
 
   right: 30px;
@@ -1190,12 +1232,28 @@ html {
   display: none;
 }
 
-.catalog-item-header {
+.catalog-item {
+  padding-top: 40px;
+  position: relative;
+}
 
-  /*Временно*/
-  min-height: 40px;
-  background-color: #c1c1c1;
-  border-radius: 3px;
+.catalog-item::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  width: 360px;
+  height: 40px;
+
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.12;
+}
+
+.catalog-item:hover::before {
+  opacity: 1;
 }
 
 .name-product {
