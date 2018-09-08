@@ -337,6 +337,46 @@ html {
   font-weight: 400;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   display: none; /*вкл. выкл.*/
 
@@ -929,6 +969,16 @@ html {
   opacity: 0.1;
 }
 
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 /*Каталог*/
 
 .page-title {
@@ -981,6 +1031,10 @@ html {
   padding: 0;
 
   border: none;
+}
+
+.specific-option {
+  position: relative;
 }
 
 .specific-option li {
@@ -1127,7 +1181,7 @@ html {
   cursor: pointer;
 }
 
-.filter-option-grid label::before {
+/*.filter-option-grid label::before {
   content: "";
   left: -39px;
   top: -3px;
@@ -1185,6 +1239,72 @@ html {
   background-repeat: no-repeat;
   background-position: 0 0;
 
+}*/
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+
+  top: -3px;
+  left: -39px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+
+  top: -3px;
+  left: -39px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.4;
+}
+
+.filter-input-checkbox + label::before:hover {
+  opacity: 1;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+
+  left: 2px;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+
+  left: 2px;
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-button {
@@ -1237,6 +1357,24 @@ html {
   width: 40px;
   margin: 0 0 0 48px;
   padding: 0;
+
+  opacity: 0.2;
+
+  cursor: pointer;
+}
+
+.sort-price {
+  width: 11px;
+  height: 10px;
+}
+
+.visual-button:hover path,
+.visual-button:focus path {
+  fill: #000000;
+}
+
+.sort-price:active {
+  opacity: 1;
 }
 
 .sort {
@@ -1254,16 +1392,6 @@ html {
 .sort:focus,
 .sort:active {
   color: rgb(0, 0, 0);
-}
-
-.sort-price-high {
-  width: 11px;
-  height: 10px;
-}
-
-.sort-price-low {
-  width: 11px;
-  height: 10px;
 }
 
 .catalog-list {
