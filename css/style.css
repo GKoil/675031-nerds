@@ -886,8 +886,6 @@ html {
   display: flex;
   flex-direction: column;
   width: 300px;
-  /*Верменно*/
-  outline: 1px solid #d7373b;
 }
 
 .filter-item {
@@ -1084,6 +1082,40 @@ html {
 
   background-color: #a6a6a6;
   border-radius: 50%;
+}
+
+.filter-option-specific label{
+  position: relative;
+}
+
+.filter-option-specific label::before {
+  content: "";
+
+  position: absolute;
+  left: -38px;
+  top: -2px;
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+.filter-option-specific label::after {
+  content: "";
+
+  position: absolute;
+  left: -38px;
+  top: -2px;
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }
 
 .filter-button {
