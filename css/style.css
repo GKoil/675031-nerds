@@ -133,6 +133,7 @@ html {
 .button:active {
   color: rgba(255,255,255,0.3);
   background-color: #d7373b;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .button.green {
@@ -164,7 +165,7 @@ html {
 .about {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between; Не работает в IE*/
   flex-wrap: wrap;
   padding: 0 20px;
   margin-bottom: 112px;
@@ -185,6 +186,7 @@ html {
   margin: 0;
   padding-top: 30px;
   padding-left: 17px;
+  width: 364px;
 }
 
 .about-text {
@@ -208,10 +210,12 @@ html {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  width: 650px;
 }
 
 .about-text-1 p:last-child {
   margin: 0;
+  width: 616px;
 }
 
 .about-text-2 {
@@ -232,6 +236,7 @@ html {
 
 .about-logo {
   width: 360px;
+  margin-left: auto;
 }
 
 .amenities {
@@ -464,6 +469,15 @@ html {
   height: 65px;
 }
 
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo img:active {
+  opacity: 0.3;
+}
+
 .user-menu {
   display: flex;
   flex-wrap: wrap;
@@ -590,6 +604,7 @@ html {
   position: relative;
 
   display: inline-block;
+  vertical-align: top;
   width: 36px;
   height: 33px;
   padding: 8px;
@@ -759,6 +774,10 @@ html {
   padding-right: 56px;
 }
 
+.text-items-2 {
+  width: 239px;
+}
+
 .button-service {
   padding: 13px 0;
   width: 160px;
@@ -887,6 +906,7 @@ html {
 
 .social-button:active {
   background-color: #d7373b;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .social-button:active svg {
@@ -1110,6 +1130,7 @@ html {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 50%;
 
   font-size: 16px;
@@ -1445,7 +1466,7 @@ html {
   align-items: center;
   width: 360px;
   flex-direction: column;
-  padding-top: 35px;
+  padding-top: 21px;
   padding-bottom: 43px;
 }
 
@@ -1499,16 +1520,27 @@ html {
 
   display: flex;
   flex-direction: column;
-  padding: 0 91px;
   text-align: center;
-}
 
-.product-description:nth-child(2),
-.product-description:nth-child(5),
-.product-description:nth-child(6) {
-  padding: 0 76px;
+  padding: 0;
   margin-top: 11px;
   margin-bottom: 29px;
+}
+
+.prd-1 {
+  padding: 0;
+  width: 176px;
+}
+
+.prd-2,
+.prd-5,
+.prd-6 {
+  width: 234px;
+}
+
+.prd-3,
+.prd-4 {
+  width: 166px;
 }
 
 .button-price {
@@ -1558,26 +1590,33 @@ html {
   text-transform: uppercase;
   background-color: rgb(238, 238, 238);
   color: rgb(0, 0, 0);
+  border-radius: 5px;
 
-  padding: 19px 23px;
+  padding: 17px 20px;
 
   display: inline-block;
+  vertical-align: top;
 }
 
 .pagination-item-current {
-  padding: 16px 21px;
+  padding: 15px 18px 0 18px;
+  border-radius: 5px;
 }
 
 .pagination-item-text {
-  padding: 18px 79px;
+  padding: 17px 79px;
+  border-radius: 5px;
 }
 
-.pagination-item:hover {
-  background-color: rgb(223, 223, 223);
-}
-
+.pagination-item:hover,
 .pagination-item:focus {
+  color: rgb(0, 0, 0);
+  background-color: rgb(213, 213, 213);
+}
+
+.pagination-item:active {
   color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   background-color: rgb(213, 213, 213);
 }
 
