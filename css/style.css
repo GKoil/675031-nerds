@@ -250,13 +250,18 @@ html {
   min-height: 153px;
 }
 
+.amenities li {
+  position: relative;
+}
+
 .amenities li::before {
   content: "";
   position: absolute;
   background: #fb565a;
   width: 25px;
   height: 2px;
-  left: 21.5px;
+  left: -34.5px;
+  top: 10px;
 }
 
 .our-advantages {
@@ -328,6 +333,10 @@ html {
 .button-info-maps {
   margin-top: 27px;
   padding: 13px;
+}
+
+.main-footer {
+  margin-bottom: 69px;
 }
 
 .main-footer p:first-of-type {
@@ -572,6 +581,8 @@ html {
   color: rgb(40, 49, 54);
   font-weight: 400;
 }
+
+
 
 .text-items {
   margin: 0;
