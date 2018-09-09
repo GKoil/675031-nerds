@@ -73,6 +73,12 @@ html {
   background-repeat: no-repeat;
 }
 
+.frame-maps {
+  width: 100%;
+  height: 416px;
+  border: 0;
+}
+
 .vertival-line {
   position: absolute;
   width: 2px;
