@@ -57,38 +57,17 @@ html {
 .line-3 {
   bottom: 144px;
 }
-/*
-.line-red {
-  position: absolute;
-  background-color: #fb565a;
-  width: 25px;
-  height: 2px;
-  left: 21px;
-}*/
-
-/*.line-red-1 {
-  bottom: 21px;
-}
-
-.line-red-2 {
-  bottom: 69px;
-}
-
-.line-red-3 {
-  bottom: 117px;
-}*/
 
 .maps {
   top: 0;
   left: -1px;
-  position: absolute;
   min-height: 416px;
+  max-width: 1440px;
+  margin: auto auto 61px auto;
+  position: relative;
 
   background-image: url(../img/map-marker.png);
   background-repeat: no-repeat;
-
-  /*padding-top: 416px;
-  padding-right: 1200px;*/
 }
 
 .vertival-line {
@@ -312,14 +291,6 @@ html {
   padding-left: 2px;
 }
 
-.maps {
-  max-width: 1440px;
-  margin: auto;
-  margin-bottom: 67px;
-  position: relative;
-  left: -1px;
-}
-
 .maps-address p:first-child {
   text-transform: uppercase;
   line-height: 30px;
@@ -345,7 +316,9 @@ html {
 
 .button-info-maps {
   margin-top: 27px;
-  padding: 13px;
+  padding: 16px 0;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 .main-footer {
@@ -442,6 +415,7 @@ html {
 
 .appointment-form-name-email {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -452,6 +426,7 @@ html {
 
 .appointment-item {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 34px;
 }
@@ -803,8 +778,10 @@ html {
 }
 
 .button-service {
-  padding: 13px 0;
+  padding: 16px 0;
   width: 160px;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 .appointment-item label {
@@ -896,6 +873,7 @@ html {
   left: 141px;
   top: 53px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding: 31px 50px 47px 50px;
   width: 319px;
@@ -909,12 +887,14 @@ html {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
 }
 
 .social-button {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -940,6 +920,7 @@ html {
 
 .footer-text {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-left: 139px;
 }
@@ -962,6 +943,7 @@ html {
 
 .main-footer-info {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 20px;
 
 }
@@ -1049,6 +1031,7 @@ html {
 
 .filter-form {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   width: 300px;
 }
@@ -1160,6 +1143,8 @@ html {
   width: 50%;
 
   font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
   text-transform: uppercase;
 }
 
@@ -1183,10 +1168,13 @@ html {
   text-align: right;
 }
 
+.price-name {
+  letter-spacing: 0.05px;
+}
+
 .filter legend {
   font-size: 18px;
   line-height: 30px;
-  letter-spacing: 0.05px;
   text-transform: uppercase;
 }
 
@@ -1377,6 +1365,7 @@ html {
   background-color: rgb(238, 238, 238);
   color: rgb(0, 0, 0);
   line-height: 18px;
+  font-weight: 500;
 
   width: 260px;
   padding: 16px;
@@ -1396,6 +1385,7 @@ html {
 
 .catalog {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -1435,6 +1425,10 @@ html {
   opacity: 0.2;
 }
 
+.sort-price-active {
+  opacity: 1;
+}
+
 .sort-price:hover,
 .sort-price:focus {
   opacity: 1;
@@ -1457,6 +1451,10 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.sort-active {
+  color: rgb(0, 0, 0);
+}
+
 .sort:hover,
 .sort:focus {
   color: rgba(0, 0, 0, 0.6);
@@ -1474,7 +1472,10 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 760px;
-  /*min-height: 1947px;*/
+}
+
+.name-items {
+  color: rgb(0, 0, 0);
 }
 
 .a-catalog-url {
@@ -1488,6 +1489,7 @@ html {
   background-color: rgb(238, 238, 238);
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 360px;
   flex-direction: column;
@@ -1552,6 +1554,7 @@ html {
   text-transform: none;
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
 
@@ -1579,7 +1582,8 @@ html {
 .button-price {
   font-weight: 500;
   width: 200px;
-  padding: 13px 0;
+  padding: 16px 0;
+  line-height: 18px;
 }
 
 .button-price:active {
@@ -1606,6 +1610,7 @@ html {
 
 .catalog-filter {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 53px;
 }
 
@@ -1634,6 +1639,10 @@ html {
 .pagination-item-current {
   padding: 15px 18px 0 18px;
   border-radius: 5px;
+  line-height: 18px;
+  font-weight: 500;
+  border: 3px solid rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
 }
 
 .pagination-item-text {
@@ -1651,11 +1660,4 @@ html {
   color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   background-color: rgb(213, 213, 213);
-}
-
-.pagination-item-current {
-  line-height: 18px;
-  font-weight: 500;
-  border: 3px solid rgb(219, 219, 219);
-  background-color: rgb(255, 255, 255);
 }

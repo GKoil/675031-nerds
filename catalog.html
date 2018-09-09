@@ -34,7 +34,7 @@
             <h2 class="visually-hidden">Фильтр шаблонов</h2>
             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru"> <!--Форма фильтр-->
               <fieldset class="filter-item">
-                <legend>Стоимость:</legend>
+                <legend class="price-name">Стоимость:</legend>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
@@ -102,15 +102,15 @@
             <div class="catalog-filter">
               <p>Сортировать:</p>
               <ul class="additional-filter">
-                <li><a class="sort" href="#">По цене</a></li>
+                <li><a class="sort sort-active" href="#">По цене</a></li>
                 <li><a class="sort" href="#">По типу</a></li>
                 <li><a class="sort" href="#">По названию</a></li>
               </ul>
             <ul class="visual-button">
-              <li><a class="sort-price sort-price-high" aria-label="Сортировка по цене: от высокой к низкой">
+              <li><a class="sort-price sort-price-active" aria-label="Сортировка по цене: от высокой к низкой">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
               </a></li>
-              <li><a class="sort-price sort-price-low" aria-label="Сортировка по цене: от низкой к высокой">
+              <li><a class="sort-price" aria-label="Сортировка по цене: от низкой к высокой">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
               </a></li>
             </ul>
@@ -122,7 +122,7 @@
                 </a>
                 <div class="catalog-hidden">
                   <div class="catalog-list-info">
-                    <h3 class="name-product">Sedona</h3>
+                    <h3 class="name-product"><a class="name-items" href="#">Sedona</a></h3>
                     <p class="product-description prd-1">Информационный сайт для туристов</p>
                     <a class="button button-price" href="#">9 900 Руб.</a>
                   </div>
@@ -134,7 +134,7 @@
                 </a>
                 <div class="catalog-hidden">
                   <div class="catalog-list-info">
-                    <h3 class="name-product">Pink App</h3>
+                    <h3 class="name-product"><a class="name-items" href="#">Pink App</a></h3>
                     <p class="product-description prd-2">Продуктовый лендинг приложения для iOS и Android</p>
                     <a class="button button-price" href="#">9 900 Руб.</a>
                   </div>
@@ -146,7 +146,7 @@
                 </a>
                 <div class="catalog-hidden">
                   <div class="catalog-list-info">
-                    <h3 class="name-product">Barbershop</h3>
+                    <h3 class="name-product"><a class="name-items" href="#">Barbershop</a></h3>
                     <p class="product-description prd-3">Сайт салона красоты. Для мужчин, да.</p>
                     <a class="button button-price" href="#">9 900 Руб.</a>
                   </div>
@@ -158,7 +158,7 @@
                 </a>
                 <div class="catalog-hidden">
                   <div class="catalog-list-info">
-                    <h3 class="name-product">MISHKA</h3>
+                    <h3 class="name-product"><a class="name-items" href="#">MISHKA</a></h3>
                     <p class="product-description prd-4">Интернет-магазин вязаных игрушек</p>
                     <a class="button button-price" href="#">9 900 Руб.</a>
                   </div>
@@ -170,7 +170,7 @@
                 </a>
                 <div class="catalog-hidden">
                   <div class="catalog-list-info">
-                    <h3 class="name-product">A Plus</h3>
+                    <h3 class="name-product"><a class="name-items" href="#">A Plus</a></h3>
                     <p class="product-description prd-5">Лендинг курсов повышения квалификации</p>
                     <a class="button button-price" href="#">9 900 Руб.</a>
                   </div>
@@ -182,7 +182,7 @@
                 </a>
                 <div class="catalog-hidden">
                   <div class="catalog-list-info">
-                    <h3 class="name-product">Кваст</h3>
+                    <h3 class="name-product"><a class="name-items" href="#">Кваст</a></h3>
                     <p class="product-description prd-6">Промо-сайт производителя крафтового кваса</p>
                     <a class="button button-price" href="#">9 900 Руб.</a>
                   </div>
@@ -205,9 +205,7 @@
           <p><a class="telephone" href="tel:+7(812)275-75-75"> тел. +7 (812) 275-75-75</a></p>
           <a class="button button-info-maps" href="contacts-popap.html">Напишите нам</a>
         </section>
-        <div class="maps-img"></div>
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f9f6bf86912d84e4e735cc1d7a996acdfd5a36370ceadb6f1b96682a616d9d2&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
-        <!--<img src="img/map-marker.png" width="1440" height="416" alt="Карта нашего местонахождения">-->
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f9f6bf86912d84e4e735cc1d7a996acdfd5a36370ceadb6f1b96682a616d9d2&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
       </section>
     </main>
     <footer class="main-footer">
