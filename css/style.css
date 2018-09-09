@@ -1193,6 +1193,7 @@ html {
 .filter-option-specific {
   list-style: none;
   line-height: 20px;
+  font-weight: 400;
   color: rgb(40, 49, 54);
 }
 
@@ -1290,7 +1291,7 @@ html {
   opacity: 0.4;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
 
@@ -1308,14 +1309,11 @@ html {
 }
 
 .filter-input-checkbox + label:hover::before,
-.filter-input-checkbox + label:focus::before,
-.filter-input-checkbox + label:hover::after,
-.filter-input-checkbox + label:focus::after {
+.filter-input-checkbox + label:focus::before {
   opacity: 1;
 }
 
-.filter-input-checkbox + label:disabled::before,
-.filter-input-checkbox + label:disabled::before {
+.filter-input-checkbox:disabled + label {
   opacity: 0.1;
 }
 
@@ -1335,7 +1333,7 @@ html {
   opacity: 0.4;
 }
 
-.filter-input-radio:checked + label::after {
+.filter-input-radio:checked + label::before {
   content: "";
 
   position: absolute;
@@ -1352,14 +1350,11 @@ html {
 }
 
 .filter-input-radio + label:hover::before,
-.filter-input-radio + label:focus::before,
-.filter-input-radio + label:hover::after,
-.filter-input-radio + label:focus::after {
+.filter-input-radio + label:focus::before {
   opacity: 1;
 }
 
-.filter-input-radio + label:disabled::before,
-.filter-input-radio + label:disabled::before {
+.filter-input-radio:disabled + label {
   opacity: 0.1;
 }
 
@@ -1422,11 +1417,17 @@ html {
 .sort-price {
   width: 11px;
   height: 10px;
+  opacity: 0.2;
 }
 
-.visual-button:hover path,
-.visual-button:focus path {
-  fill: #000000;
+.sort-price:hover,
+.sort-price:focus {
+  opacity: 1;
+}
+
+.sort-price:hover path,
+.sort-price:focus path {
+  fill: #a6a6a6;
 }
 
 .sort-price:active {
@@ -1441,11 +1442,11 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sort:hover {
+.sort:hover,
+.sort:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sort:focus,
 .sort:active {
   color: rgb(0, 0, 0);
 }
@@ -1463,11 +1464,7 @@ html {
 
 .a-catalog-url {
   border: 1px solid rgba(0, 1, 1, 0.1);
-}
-
-.a-catalog-url:hover {
-  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
-  border: 1px solid rgba(77, 77, 77, 0.1);
+  display: block;
 }
 
 .catalog-list-info {
@@ -1495,6 +1492,12 @@ html {
   padding-top: 40px;
   position: relative;
   margin-bottom: 26px;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
+  border: 1px solid rgba(77, 77, 77, 0.1);
 }
 
 .catalog-item::before {
