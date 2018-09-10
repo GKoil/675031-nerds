@@ -229,6 +229,7 @@ html {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  -webkit-font-kerning: none;
   font-kerning: none;
   width: 660px;
 }
@@ -258,6 +259,7 @@ html {
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  -webkit-font-kerning: none;
   font-kerning: none;
 }
 
@@ -1122,6 +1124,7 @@ html {
   padding-top: 8px;
   line-height: 36px;
   font-weight: 700;
+  -webkit-font-kerning: none;
   font-kerning: none;
 }
 
@@ -1150,6 +1153,7 @@ html {
   margin-bottom: 84px;
   line-height: 18px;
   font-weight: 500;
+  -webkit-font-kerning: none;
   font-kerning: none;
 }
 
@@ -1213,6 +1217,7 @@ html {
   line-height: 55px;
   background-color: #eeeeee;
   font-weight: 500;
+  -webkit-font-kerning: none;
   font-kerning: none;
 
   margin: 0 auto;
@@ -1264,6 +1269,7 @@ html {
 
 .filter-item .price-name {
   font-size: 19px;
+  -webkit-font-kerning: none;
   font-kerning: none;
 }
 
