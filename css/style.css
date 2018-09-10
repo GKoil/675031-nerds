@@ -487,7 +487,7 @@ html {
   -ms-flex-direction: column;
   flex-direction: column;
   padding-top: 67px;
-  padding-left: 98px;
+  padding-left: 100px;
 
   z-index: 100;
   position: fixed;
@@ -506,7 +506,7 @@ html {
 }
 
 .appointment-form {
-  margin-top: 39px;
+  margin-top: 41px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,7 +531,7 @@ html {
 }
 
 .appointment-form-name-email input {
-  padding: 13px 0 13px 16px;
+  padding: 14px 0 14px 14px;
   width: 360px;
 }
 
@@ -549,7 +549,7 @@ html {
 }
 
 .appointment-item label {
-  padding-bottom: 12px;
+  padding-bottom: 9px;
 }
 
 .appointment-item textarea {
@@ -558,7 +558,7 @@ html {
 }
 
 .appointment-item-text textarea {
-  padding: 8px 0 0 12px;
+  padding: 11px 0 0 12px;
 }
 
 .main-header {
@@ -937,6 +937,7 @@ html {
   font-weight: 400;
   line-height: 18px;
   border: 2px solid #d7dcde;
+  border-radius: 3px;
 }
 
 .appointment-item input:hover,
@@ -951,10 +952,15 @@ html {
   border: 2px solid #000000;
 }
 
-.appointment-item input:focus::-webkit-input-placeholder {color: black;}
-.appointment-item input:focus::-moz-placeholder          {color: black;}
-.appointment-item input:focus:-moz-placeholder           {color: black;}
-.appointment-item input:focus:-ms-input-placeholder      {color: black;}
+.appointment-item input:focus::-webkit-input-placeholder  {color: black;}
+.appointment-item input:focus::-moz-placeholder           {color: black;}
+.appointment-item input:focus:-moz-placeholder            {color: black;}
+.appointment-item input:focus:-ms-input-placeholder       {color: black;}
+
+.appointment-item textarea:focus::-webkit-input-placeholder  {color: black;}
+.appointment-item textarea:focus::-moz-placeholder           {color: black;}
+.appointment-item textarea:focus:-moz-placeholder            {color: black;}
+.appointment-item textarea:focus:-ms-input-placeholder       {color: black;}
 
 .appointment-item input:invalid,
 .appointment-item textarea:invalid {
@@ -1132,10 +1138,13 @@ html {
 
 .button-modal {
   width: 260px;
-  padding: 13px 0;
+  padding: 16px 0;
   cursor: pointer;
-  margin-top: 11px;
+  margin-top: 12px;
   margin-bottom: 84px;
+  line-height: 18px;
+  font-weight: 500;
+  font-kerning: none;
 }
 
 .modal-close {
@@ -1156,8 +1165,8 @@ html {
   content: "";
 
   position: absolute;
-  right: -2px;
-  top: -2px;
+  right: 3px;
+  top: -7px;
 
   width: 21px;
   height: 21px;
@@ -1504,6 +1513,11 @@ html {
   opacity: 0.1;
 }
 
+.filter-input-radio + label:hover::before,
+.filter-input-radio + label:focus::before {
+  opacity: 1;
+}
+
 .filter-button {
   background-color: rgb(238, 238, 238);
   color: rgb(0, 0, 0);
@@ -1572,10 +1586,6 @@ html {
   width: 40px;
   margin: 0 0 0 48px;
   padding: 0;
-
-  opacity: 0.2;
-
-  cursor: pointer;
 }
 
 .sort-price {
