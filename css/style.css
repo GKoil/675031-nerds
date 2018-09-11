@@ -70,8 +70,6 @@ html {
   position: relative;
 
   background: rgb(241, 239, 232) url(../img/map-marker.png) no-repeat;
-  /*background-image: url(../img/map-marker.png);
-  background-repeat: no-repeat;*/
 }
 
 .frame-maps {
@@ -111,7 +109,7 @@ html {
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  background-color: #eeeeee;
+  background-color: rgb(238, 238, 238);
 }
 
 .button {
@@ -119,9 +117,9 @@ html {
   font: inherit;
 
   text-align: center;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
-  background-color: #fb565a;
+  background-color: rgb(251, 86, 90);
   border: none;
   -webkit-transition: background-color 0.6s ease;
   -o-transition: background-color 0.6s ease;
@@ -131,40 +129,40 @@ html {
 
 .button:hover,
 .button:focus {
-  background-color: #e74246;
+  background-color: rgb(231, 66, 70);
 }
 
 .button:active {
   color: rgba(255,255,255,0.3);
-  background-color: #d7373b;
+  background-color: rgb(215, 55, 59);;
   -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .button.green {
-  background-color: #00ca74;
+  background-color: rgb(0, 202, 116);
 }
 
 .button.green:hover,
 .button.green:focus {
-  background-color: #00bc6c;
+  background-color: rgb(0, 188, 108);
 }
 
 .button.green:active {
-  background-color: #00aa62;
+  background-color: rgb(0, 170, 98);
 }
 
 .button.yellow {
-  background-color: #efc84a;
+  background-color: rgb(239, 200, 74);
 }
 
 .button.yellow:hover,
 .button.yellow:focus {
-  background-color: #eab534;
+  background-color: rgb(234, 181, 52);
 }
 
 .button.yellow:active {
-  background-color: #e5a722;
+  background-color: rgb(229, 167, 34);
 }
 
 .about {
@@ -294,7 +292,7 @@ html {
 .amenities li::before {
   content: "";
   position: absolute;
-  background: #fb565a;
+  background: rgb(251, 86, 90);
   width: 25px;
   height: 2px;
   left: -34.5px;
@@ -355,13 +353,13 @@ html {
   padding-left: 1px;
   line-height: 18px;
   font-weight: 400;
-  color: #666666;
+  color: rgb(102, 102, 102);
   width: 202px;
 }
 
 .maps-address .telephone {
   line-height: 18px;
-  color: #666666;
+  color: rgb(102, 102, 102);
 }
 
 .button-info-maps {
@@ -382,7 +380,7 @@ html {
 }
 
 .main-footer p:first-of-type {
-  color: #444444;
+  color: rgb(68, 68, 68);
   line-height: 22px;
   font-weight: 400;
 }
@@ -496,7 +494,7 @@ html {
   position: fixed;
   top: 71px;
   left: calc(50% - 480px);
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   -webkit-box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
@@ -565,7 +563,7 @@ html {
 }
 
 .main-header {
-  background-color: #eeeeee;
+  background-color: rgb(238, 238, 238);
   text-transform: uppercase;
 
   /*Временно для сетки*/
@@ -646,7 +644,7 @@ html {
 
 .down-line-red {
   padding-bottom: 9px;
-  border-bottom: 2px solid #fb565a;
+  border-bottom: 2px solid rgb(251, 86, 90);
 }
 
 .site-navigation li:nth-child(3) {
@@ -677,17 +675,17 @@ html {
 
 .site-navigation a,
 .user-basket a {
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 
 .site-navigation a:hover,
 .user-basket a:hover {
-  color: #fb565a;
+  color: rgb(251, 86, 90);
 }
 
 .site-navigation a:focus,
 .user-basket a:focus {
-  color: #000000;
+  color: rgb(0, 0, 0);
   opacity: 0.3;
 }
 
@@ -710,11 +708,11 @@ html {
   padding-bottom: 31px;
 }
 
-/*Слайдер academy*/
+/*Слайдер*/
 .slider-new {
   position: relative;
 
-  background-color: #eeeeee;
+  background-color: rgb(238, 238, 238);
 }
 
 .slider-controls {
@@ -757,7 +755,7 @@ html {
   width: 18px;
   height: 18px;
 
-  background: #ffffff;
+  background: rgb(255, 255, 255);
 
   border-radius: 50%;
 }
@@ -821,7 +819,7 @@ html {
   height: 8px;
   margin: -4px;
   background-color: inherit;
-  border: 2px solid #c1c1c1;
+  border: 2px solid rgb(193, 193, 193);
   border-radius: 50%;
 }
 
@@ -944,7 +942,7 @@ html {
 .appointment-item textarea {
   font-weight: 400;
   line-height: 18px;
-  border: 2px solid #d7dcde;
+  border: 2px solid rgb(215, 220, 222);
   border-radius: 3px;
 }
 
@@ -952,12 +950,12 @@ html {
 .appointment-item textarea:hover,
 .appointment-item input:focus,
 .appointment-item textarea:focus {
-  border: 2px solid #b4b9bb;
+  border: 2px solid rgb(180, 185, 187);
 }
 
 .appointment-item input:focus,
 .appointment-item textarea:focus {
-  border: 2px solid #000000;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .appointment-item input:focus::-webkit-input-placeholder  {color: black;}
@@ -972,8 +970,8 @@ html {
 
 .appointment-item input:invalid,
 .appointment-item textarea:invalid {
-  border: 2px solid #e74246;
-  color: #e74246;
+  border: 2px solid rgb(231, 66, 70);
+  color: rgb(231, 66, 70);
 }
 
 .partners {
@@ -1051,7 +1049,7 @@ html {
   padding: 31px 50px 47px 50px;
   width: 319px;
   min-height: 308px;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   z-index: 1;
 }
 
@@ -1091,11 +1089,11 @@ html {
 
 .social-button:hover,
 .social-button:focus {
-  background-color: #e74246;
+  background-color: rgb(231, 66, 70);
 }
 
 .social-button:active {
-  background-color: #d7373b;
+  background-color: rgb(215, 55, 59);
   -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
@@ -1118,7 +1116,7 @@ html {
 }
 
 .footer-text p:first-child {
-  color: #000000;
+  color: rgb(0, 0, 0);
 
   margin: 0;
   padding-top: 8px;
@@ -1215,7 +1213,7 @@ html {
 .page-title {
   font-size: 55px;
   line-height: 55px;
-  background-color: #eeeeee;
+  background-color: rgb(238, 238, 238);
   font-weight: 500;
   -webkit-font-kerning: none;
   font-kerning: none;
@@ -1312,7 +1310,7 @@ html {
   padding-right: 20px;
   padding-left: 20px;
 
-  background-color: #f1f1f1;
+  background-color: rgb(241, 241, 241);
   border-radius: 5px;
 }
 
@@ -1320,14 +1318,14 @@ html {
   margin-top: -2px;
   height: 2px;
 
-  background: #d7dcde;
+  background: rgb(215, 220, 222);
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
 
-  background: #00ca74;
+  background: rgb(0, 202, 116);
 }
 
 .range-controls .toggle {
@@ -1381,11 +1379,11 @@ html {
 
   font-size: 16px;
   text-align: center;
-  color: #283136;
+  color: rgb(40, 49, 54);
 
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: rgb(241, 241, 241);
 }
 
 .max-price {
@@ -1399,13 +1397,13 @@ html {
 }
 
 .cost {
-  color: #283136;
+  color: rgb(40, 49, 54);
   line-height: 22px;
   text-transform: uppercase;
 }
 
 .cost input {
-  color: #283136;
+  color: rgb(40, 49, 54);
   line-height: 22px;
   text-transform: uppercase;
   background-color: rgb(238, 238, 238);
@@ -1617,7 +1615,7 @@ html {
 
 .sort-price:hover path,
 .sort-price:focus path {
-  fill: #a6a6a6;
+  fill: rgb(166, 166, 166);
 }
 
 .sort-price:active {
@@ -1625,7 +1623,7 @@ html {
 }
 
 .sort-price:active path {
-  fill: #000000;
+  fill: rgb(0, 0, 0);
 }
 
 .sort {
