@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -65,7 +65,6 @@ html {
   top: 0;
   left: -1px;
   height: 416px;
-  max-width: 1440px;
   margin: auto auto 68px auto;
   position: relative;
 
@@ -631,15 +630,17 @@ html {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
+  max-width: 600px;
+
   padding-top: 26px;
 }
 
-.site-navigation li {
+.site-navigation li:not(:nth-child(6n)) {
   padding-left: 45px;
 }
 
 .site-navigation li:first-child {
-  padding-left: 1px;
+  padding-left: 0;
 }
 
 .down-line-red {
@@ -958,15 +959,31 @@ html {
   border: 2px solid rgb(0, 0, 0);
 }
 
-.appointment-item input:focus::-webkit-input-placeholder  {color: black;}
-.appointment-item input:focus::-moz-placeholder           {color: black;}
-.appointment-item input:focus:-moz-placeholder            {color: black;}
-.appointment-item input:focus:-ms-input-placeholder       {color: black;}
+.appointment-item input:focus::-webkit-input-placeholder {
+  color: black;
+}
+.appointment-item input:focus::-moz-placeholder {
+  color: black;
+}
+.appointment-item input:focus:-moz-placeholder {
+  color: black;
+}
+.appointment-item input:focus:-ms-input-placeholder {
+  color: black;
+}
 
-.appointment-item textarea:focus::-webkit-input-placeholder  {color: black;}
-.appointment-item textarea:focus::-moz-placeholder           {color: black;}
-.appointment-item textarea:focus:-moz-placeholder            {color: black;}
-.appointment-item textarea:focus:-ms-input-placeholder       {color: black;}
+.appointment-item textarea:focus::-webkit-input-placeholder {
+  color: black;
+}
+.appointment-item textarea:focus::-moz-placeholder {
+  color: black;
+}
+.appointment-item textarea:focus:-moz-placeholder {
+  color: black;
+}
+.appointment-item textarea:focus:-ms-input-placeholder {
+  color: black;
+}
 
 .appointment-item input:invalid,
 .appointment-item textarea:invalid {
@@ -1035,7 +1052,7 @@ html {
 
 .maps-address {
   position: absolute;
-  left: 141px;
+  left: 18.5%;
   top: 53px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1813,8 +1830,12 @@ html {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 443px;
+  min-width: 443px;
+  max-width: 760px;
+}
+
+.pagination-list li {
+  margin-right: 11.4px;
 }
 
 .catalog-filter {
@@ -1849,7 +1870,7 @@ html {
 }
 
 .pagination-item-current {
-  padding: 15px 18px 0 18px;
+  padding: 15px 17px 0 18px;
   border-radius: 5px;
   line-height: 18px;
   font-weight: 500;
