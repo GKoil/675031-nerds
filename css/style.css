@@ -62,13 +62,12 @@ html {
 }
 
 .maps {
-  top: 0;
-  left: -1px;
   height: 416px;
   margin: auto auto 68px auto;
   position: relative;
 
   background: rgb(241, 239, 232) url(../img/map-marker.png) no-repeat;
+  background-position: center;
 }
 
 .frame-maps {
