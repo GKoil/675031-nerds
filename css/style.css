@@ -584,6 +584,8 @@ html {
 .main-header-logo {
   width: 160px;
   height: 65px;
+
+  cursor: pointer;
 }
 
 .main-header-logo:hover,
@@ -646,6 +648,8 @@ html {
 .down-line-red {
   padding-bottom: 9px;
   border-bottom: 2px solid rgb(251, 86, 90);
+
+  cursor: pointer;
 }
 
 .site-navigation li:nth-child(3) {
@@ -680,6 +684,7 @@ html {
 }
 
 .site-navigation a:hover,
+.site-navigation span:hover,
 .user-basket a:hover {
   color: rgb(251, 86, 90);
 }
