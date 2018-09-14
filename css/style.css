@@ -64,7 +64,8 @@ html {
   height: 416px;
   margin: auto auto 68px auto;
   position: relative;
-  background: rgb(241, 239, 232) url(../img/map-marker.png) no-repeat;
+  background: rgb(241, 239, 232) url(../img/map-marker.png);
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -670,7 +671,9 @@ html {
   left: 16px;
   width: 15px;
   height: 15px;
-  background: url("../img/cart-icon.svg") no-repeat 0 0;
+  background: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .site-navigation a,
