@@ -1835,8 +1835,6 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   min-width: 443px;
   max-width: 760px;
 }
