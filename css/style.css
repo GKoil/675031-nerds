@@ -636,6 +636,10 @@ html {
   padding-top: 26px;
 }
 
+.active-type {
+  cursor: pointer;
+}
+
 .site-navigation li:not(:nth-child(6n)) {
   padding-left: 45px;
 }
@@ -683,7 +687,6 @@ html {
 }
 
 .site-navigation a:hover,
-.site-navigation span:hover,
 .user-basket a:hover {
   color: rgb(251, 86, 90);
 }
