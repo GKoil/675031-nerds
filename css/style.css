@@ -2,14 +2,12 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   text-transform: none;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -41,6 +39,7 @@ html {
   width: 1200px;
   margin: 0 auto;
 }
+
 .line {
   position: absolute;
   width: 1160px;
@@ -65,7 +64,6 @@ html {
   height: 416px;
   margin: auto auto 68px auto;
   position: relative;
-
   background: rgb(241, 239, 232) url(../img/map-marker.png) no-repeat;
   background-position: center;
 }
@@ -113,7 +111,6 @@ html {
 .button {
   display: block;
   font: inherit;
-
   text-align: center;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -132,7 +129,8 @@ html {
 
 .button:active {
   color: rgba(255,255,255,0.3);
-  background-color: rgb(215, 55, 59);;
+  background-color: rgb(215, 55, 59);
+;
   -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
@@ -329,7 +327,6 @@ html {
   font-weight: 400;
   color: rgb(40, 49, 54);
   line-height: 18px;
-
   margin: 0px;
   margin-top: -8px;
   padding-left: 2px;
@@ -478,8 +475,8 @@ html {
 }
 
 .modal {
-  display: none; /*вкл. выкл.*/
-
+  display: none;
+  /*вкл. выкл.*/
   width: 960px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -487,7 +484,6 @@ html {
   flex-direction: column;
   padding-top: 67px;
   padding-left: 100px;
-
   z-index: 100;
   position: fixed;
   top: 71px;
@@ -563,7 +559,6 @@ html {
 .main-header {
   background-color: rgb(238, 238, 238);
   text-transform: uppercase;
-
   /*Временно для сетки*/
   min-height: 114px;
 }
@@ -575,7 +570,6 @@ html {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 1160px;
-
   margin: 0 auto;
   padding-top: 49px;
 }
@@ -583,7 +577,6 @@ html {
 .main-header-logo {
   width: 160px;
   height: 65px;
-
   cursor: pointer;
 }
 
@@ -618,7 +611,6 @@ html {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-
   list-style: none;
   line-height: 30px;
   font-weight: 500;
@@ -630,9 +622,7 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
   width: 451px;
-
   padding-top: 26px;
 }
 
@@ -660,7 +650,6 @@ html {
 .down-line-red {
   padding-bottom: 9px;
   border-bottom: 2px solid rgb(251, 86, 90);
-
   cursor: pointer;
 }
 
@@ -676,14 +665,11 @@ html {
 
 .user-basket::before {
   content: "";
-
   position: relative;
   top: 7px;
   left: 16px;
-
   width: 15px;
   height: 15px;
-
   background: url("../img/cart-icon.svg") no-repeat 0 0;
 }
 
@@ -714,8 +700,6 @@ html {
   font-weight: 400;
 }
 
-
-
 .text-items {
   margin: 0;
   padding-top: 18px;
@@ -725,7 +709,6 @@ html {
 /*Слайдер*/
 .slider-new {
   position: relative;
-
   background-color: rgb(238, 238, 238);
 }
 
@@ -734,10 +717,8 @@ html {
   left: 50%;
   bottom: 104px;
   z-index: 100;
-
   width: 160px;
   height: 18px;
-
   text-align: center;
   font-size: 0;
   -webkit-transform: translateX(-50%);
@@ -747,37 +728,30 @@ html {
 
 .slider-controls label {
   position: relative;
-
   display: inline-block;
   vertical-align: top;
   width: 36px;
   height: 33px;
   padding: 8px;
-
   border-radius: 50%;
   cursor: pointer;
 }
 
 .slider-controls label::after {
   content: "";
-
   position: absolute;
   top: 8px;
   left: 8px;
   z-index: 1;
-
   width: 18px;
   height: 18px;
-
   background: rgb(255, 255, 255);
-
   border-radius: 50%;
 }
 
 .slider-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -792,21 +766,18 @@ html {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: 431px 18px;
-
 }
 
 .slider-item:nth-child(2) {
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
   background-position: 496px 0;
-
 }
 
 .slider-item:nth-child(3) {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 401px 19px;
-
 }
 
 .slide-1:checked ~ .slider-list .slider-item:nth-child(1) {
@@ -841,7 +812,6 @@ html {
   max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
-
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -859,7 +829,6 @@ html {
 .slider-item-button {
   width: 240px;
   padding: 16px;
-
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -883,7 +852,6 @@ html {
   justify-content: space-between;
   padding: 0 80px 0 20px;
   margin: 0;
-
   list-style: none;
 }
 
@@ -902,7 +870,6 @@ html {
 }
 
 .feature-item:nth-child(1) {
-
   background-image: url("../img/illustration-1.png");
   background-repeat: no-repeat;
 }
@@ -975,12 +942,15 @@ html {
 .appointment-item input:focus::-webkit-input-placeholder {
   color: black;
 }
+
 .appointment-item input:focus::-moz-placeholder {
   color: black;
 }
+
 .appointment-item input:focus:-moz-placeholder {
   color: black;
 }
+
 .appointment-item input:focus:-ms-input-placeholder {
   color: black;
 }
@@ -988,12 +958,15 @@ html {
 .appointment-item textarea:focus::-webkit-input-placeholder {
   color: black;
 }
+
 .appointment-item textarea:focus::-moz-placeholder {
   color: black;
 }
+
 .appointment-item textarea:focus:-moz-placeholder {
   color: black;
 }
+
 .appointment-item textarea:focus:-ms-input-placeholder {
   color: black;
 }
@@ -1018,14 +991,9 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
   -webkit-box-pack: justify;
-
   -ms-flex-pack: justify;
-
   justify-content: space-between;
-
-
   list-style: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1110,7 +1078,6 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
   width: 79px;
   height: 79px;
   background-color: rgb(225, 225, 225);
@@ -1147,7 +1114,6 @@ html {
 
 .footer-text p:first-child {
   color: rgb(0, 0, 0);
-
   margin: 0;
   padding-top: 8px;
   line-height: 36px;
@@ -1170,7 +1136,6 @@ html {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0 20px;
-
 }
 
 .button-modal {
@@ -1191,28 +1156,21 @@ html {
   height: 21px;
   right: 87px;
   top: 86px;
-
   background-color: transparent;
   border: 0;
-
   cursor: pointer;
-
 }
 
 .modal-close::before {
   content: "";
-
   position: absolute;
   right: 3px;
   top: -7px;
-
   width: 21px;
   height: 21px;
-
   background-image: url("../img/close-cross.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
   opacity: 0.3;
 }
 
@@ -1227,9 +1185,7 @@ html {
 
 .modal-show {
   display: block;
-
   -webkit-animation: bounce 0.6s;
-
   animation: bounce 0.6s;
 }
 
@@ -1247,7 +1203,6 @@ html {
   font-weight: 500;
   -webkit-font-kerning: none;
   font-kerning: none;
-
   margin: 0 auto;
   margin-bottom: 56px;
   padding-top: 78px;
@@ -1284,14 +1239,12 @@ html {
 .filter-item {
   margin: 0 0 55px 0;
   padding: 0;
-
   border: none;
 }
 
 .filter-item-grid {
   margin: 0 0 29px 0;
   padding: 0;
-
   border: none;
 }
 
@@ -1313,7 +1266,6 @@ html {
 .filter-item-special {
   margin: 0 0 13px -1px;
   padding: 0;
-
   border: none;
 }
 
@@ -1333,13 +1285,11 @@ html {
 
 .range-controls {
   position: relative;
-
   height: 80px;
   margin-bottom: 15px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-
   background-color: rgb(241, 241, 241);
   border-radius: 5px;
 }
@@ -1347,14 +1297,12 @@ html {
 .range-controls .scale {
   margin-top: -2px;
   height: 2px;
-
   background: rgb(215, 220, 222);
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-
   background: rgb(0, 202, 116);
 }
 
@@ -1362,18 +1310,13 @@ html {
   position: relative;
   top: 28px;
   left: 0;
-
   width: 20px;
   height: 23px;
   padding: 0;
-
   background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-
   cursor: pointer;
-
 }
 
 .range-controls .toggle-min {
@@ -1394,7 +1337,6 @@ html {
   display: inline-block;
   vertical-align: top;
   width: 50%;
-
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -1405,12 +1347,9 @@ html {
   width: 79px;
   padding: 8px 10px;
   margin-left: 10px;
-
-
   font-size: 16px;
   text-align: center;
   color: rgb(40, 49, 54);
-
   border: none;
   border-radius: 5px;
   background: rgb(241, 241, 241);
@@ -1459,7 +1398,6 @@ html {
 
 .filter-option-grid label {
   position: relative;
-
   display: block;
   cursor: pointer;
 }
@@ -1467,34 +1405,26 @@ html {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-
   top: -3px;
   left: -37px;
-
   width: 25px;
   height: 25px;
-
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
   opacity: 0.4;
 }
 
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-
   top: -3px;
   left: -37px;
-
   width: 25px;
   height: 25px;
-
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
   opacity: 0.4;
 }
 
@@ -1515,32 +1445,24 @@ html {
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-
   left: 2px;
-
   width: 23px;
   height: 23px;
-
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
   opacity: 0.4;
 }
 
 .filter-input-radio:checked + label::before {
   content: "";
-
   position: absolute;
-
   left: 2px;
   width: 27px;
   height: 23px;
-
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
   opacity: 0.4;
 }
 
@@ -1563,10 +1485,8 @@ html {
   color: rgb(0, 0, 0);
   line-height: 18px;
   font-weight: 500;
-
   width: 260px;
   padding: 16px;
-
   cursor: pointer;
 }
 
@@ -1705,11 +1625,8 @@ html {
 
 .catalog-list-info {
   background-color: rgb(238, 238, 238);
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1754,16 +1671,13 @@ html {
 
 .catalog-item::before {
   content: "";
-
   position: absolute;
   top: 0;
   width: 360px;
   height: 40px;
-
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
   opacity: 0.12;
 }
 
@@ -1783,11 +1697,8 @@ html {
   line-height: 18px;
   font-weight: 400;
   text-transform: none;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1796,7 +1707,6 @@ html {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-
   padding: 0;
   margin-top: 11px;
   margin-bottom: 29px;
@@ -1833,11 +1743,8 @@ html {
   list-style: none;
   margin: 0 0 55px 0;
   padding: 0;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1865,7 +1772,6 @@ html {
   margin: 2px 0 0 0;
 }
 
-
 .pagination-item {
   line-height: 18px;
   font-weight: 500;
@@ -1873,9 +1779,7 @@ html {
   background-color: rgb(238, 238, 238);
   color: rgb(0, 0, 0);
   border-radius: 5px;
-
   padding: 17px 20px;
-
   display: inline-block;
   vertical-align: top;
 }
