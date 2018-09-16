@@ -560,8 +560,6 @@ html {
 .main-header {
   background-color: rgb(238, 238, 238);
   text-transform: uppercase;
-  /*Временно для сетки*/
-  min-height: 114px;
 }
 
 .main-navigation {
@@ -627,10 +625,6 @@ html {
   padding-top: 26px;
 }
 
-.active-type {
-  cursor: pointer;
-}
-
 .site-navigation li {
   width: 86px;
   text-align: center;
@@ -651,7 +645,6 @@ html {
 .down-line-red {
   padding-bottom: 9px;
   border-bottom: 2px solid rgb(251, 86, 90);
-  cursor: pointer;
 }
 
 .user-basket {
@@ -943,35 +936,35 @@ html {
 }
 
 .appointment-item input:focus::-webkit-input-placeholder {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .appointment-item input:focus::-moz-placeholder {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .appointment-item input:focus:-moz-placeholder {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .appointment-item input:focus:-ms-input-placeholder {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .appointment-item textarea:focus::-webkit-input-placeholder {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .appointment-item textarea:focus::-moz-placeholder {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .appointment-item textarea:focus:-moz-placeholder {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .appointment-item textarea:focus:-ms-input-placeholder {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .appointment-item input:invalid,
