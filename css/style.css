@@ -996,16 +996,15 @@ html {
   align-items: center;
 }
 
-.partners-img {
+.partners-img img {
   opacity: 0.2;
 }
 
-.partners-img:hover,
-.partners-img:focus {
+.partners-img img:hover,
+.partners-img img:focus {
   opacity: 1;
 }
 
-/*Для IE11*/
 .partners-img img:active {
   opacity: 0.1;
 }
